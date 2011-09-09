@@ -1,0 +1,22 @@
+This is the HTML block that is used for the summary of a girl
+-------------------------------------------------------------
+
+` <div class="summary">
+	<p><span>gender:</span> SG</p>
+	<p><span>age:</span> 24 (Nov 02, 1986)</p>
+	<p><span>location:</span> Alabama, USA</p>
+	<p><span>hometown:</span> somwhere in Alabama</p>
+	<p><span><a href="http://www.amazon.com/gp/registry/H56VOJO1E3S1" title="http://www.amazon.com/gp/registry/H56VOJO1E3S1" target="_blank">WISHLIST</a></span></p>
+	<p><span><a href="http://www.myspace.com/aledasuicide" title="http://www.myspace.com/aledasuicide" target="_blank">MYSPACE</a></span></p>
+	<p><span>occupation:</span> peanut butter taster</p><p><span>crush:</span> Hugh Laurie, Hugo Weaving, Nicholas Cage................. whee.</p>
+	<p><span>most humbling moment:</span> shouting conjugal visit in the middle of waffle house heh</p><p><span>heroes:</span> me</p>
+	<p><span>stats:</span> horrifyingly cute</p><p><span>i lost my virginity:</span> ..............................what did you call me??</p>
+</div> `
+
+These are the URL schemes used for addressing some of a girls information
+-------------------------------------------------------------------------
+
+__GIRLNAME__ is a placeholder for a girls name.
+
+* The girl herself:        http://suicidegirls.com/girls/__GIRLNAME__/
+* All photosets of a girl: http://suicidegirls.com/girls/__GIRLNAME__/pics/all/

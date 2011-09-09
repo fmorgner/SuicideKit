@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB0A9D6512D69BD5004FE3A9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0A9D6412D69BD5004FE3A9 /* Cocoa.framework */; };
+		BB0A9D6A12D69BD5004FE3A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB0A9D6812D69BD5004FE3A9 /* InfoPlist.strings */; };
+		BB0A9D7E12D6A01D004FE3A9 /* SKRSSParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BB0A9D7C12D6A01D004FE3A9 /* SKRSSParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB0A9D7F12D6A01D004FE3A9 /* SKRSSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0A9D7D12D6A01D004FE3A9 /* SKRSSParser.m */; };
+		C74DED9913805DA4005DA422 /* SKGirl.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DED9313805DA4005DA422 /* SKGirl.h */; };
+		C74DED9A13805DA4005DA422 /* SKGirl.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DED9413805DA4005DA422 /* SKGirl.m */; };
+		C74DED9B13805DA4005DA422 /* SKPhotoset.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DED9513805DA4005DA422 /* SKPhotoset.h */; };
+		C74DED9C13805DA4005DA422 /* SKPhotoset.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DED9613805DA4005DA422 /* SKPhotoset.m */; };
+		C74DED9D13805DA4005DA422 /* SKPhotosetParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DED9713805DA4005DA422 /* SKPhotosetParser.h */; };
+		C74DED9E13805DA4005DA422 /* SKPhotosetParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DED9813805DA4005DA422 /* SKPhotosetParser.m */; };
+		C74DEDA51380600C005DA422 /* SG-summary-right.txt in Resources */ = {isa = PBXBuildFile; fileRef = C74DEDA41380600C005DA422 /* SG-summary-right.txt */; };
+		C74DEDA713806095005DA422 /* SG-links.txt in Resources */ = {isa = PBXBuildFile; fileRef = C74DEDA613806095005DA422 /* SG-links.txt */; };
+		C74DEDAD138062F6005DA422 /* SKAsynchronousFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DEDAB138062F6005DA422 /* SKAsynchronousFetcher.h */; };
+		C74DEDAE138062F6005DA422 /* SKAsynchronousFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DEDAC138062F6005DA422 /* SKAsynchronousFetcher.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB0A9D6212D69BD5004FE3A9 /* SuicideKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SuicideKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0A9D6412D69BD5004FE3A9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BB0A9D6612D69BD5004FE3A9 /* SuicideKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SuicideKit-Info.plist"; sourceTree = "<group>"; };
+		BB0A9D6712D69BD5004FE3A9 /* SuicideKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SuicideKit-Prefix.pch"; sourceTree = "<group>"; };
+		BB0A9D6912D69BD5004FE3A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BB0A9D7C12D6A01D004FE3A9 /* SKRSSParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKRSSParser.h; sourceTree = "<group>"; };
+		BB0A9D7D12D6A01D004FE3A9 /* SKRSSParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKRSSParser.m; sourceTree = "<group>"; };
+		C74DED9313805DA4005DA422 /* SKGirl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKGirl.h; sourceTree = "<group>"; };
+		C74DED9413805DA4005DA422 /* SKGirl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKGirl.m; sourceTree = "<group>"; };
+		C74DED9513805DA4005DA422 /* SKPhotoset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPhotoset.h; sourceTree = "<group>"; };
+		C74DED9613805DA4005DA422 /* SKPhotoset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKPhotoset.m; sourceTree = "<group>"; };
+		C74DED9713805DA4005DA422 /* SKPhotosetParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPhotosetParser.h; sourceTree = "<group>"; };
+		C74DED9813805DA4005DA422 /* SKPhotosetParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKPhotosetParser.m; sourceTree = "<group>"; };
+		C74DEDA41380600C005DA422 /* SG-summary-right.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "SG-summary-right.txt"; path = "HTML Elements/SG-summary-right.txt"; sourceTree = "<group>"; };
+		C74DEDA613806095005DA422 /* SG-links.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "SG-links.txt"; path = "HTML Elements/SG-links.txt"; sourceTree = "<group>"; };
+		C74DEDAB138062F6005DA422 /* SKAsynchronousFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAsynchronousFetcher.h; sourceTree = "<group>"; };
+		C74DEDAC138062F6005DA422 /* SKAsynchronousFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAsynchronousFetcher.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB0A9D5E12D69BD5004FE3A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0A9D6512D69BD5004FE3A9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB0A9D5212D69BD5004FE3A9 = {
+			isa = PBXGroup;
+			children = (
+				C74DEDA313805FC3005DA422 /* HTML Elements */,
+				BB0A9D5912D69BD5004FE3A9 /* Classes */,
+				BB0A9D5A12D69BD5004FE3A9 /* Other Sources */,
+				BB0A9D5B12D69BD5004FE3A9 /* Resources */,
+				BB0A9D5C12D69BD5004FE3A9 /* Frameworks */,
+				BB0A9D6312D69BD5004FE3A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB0A9D5912D69BD5004FE3A9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C74DEDAB138062F6005DA422 /* SKAsynchronousFetcher.h */,
+				C74DEDAC138062F6005DA422 /* SKAsynchronousFetcher.m */,
+				C74DED9313805DA4005DA422 /* SKGirl.h */,
+				C74DED9413805DA4005DA422 /* SKGirl.m */,
+				C74DED9513805DA4005DA422 /* SKPhotoset.h */,
+				C74DED9613805DA4005DA422 /* SKPhotoset.m */,
+				C74DED9713805DA4005DA422 /* SKPhotosetParser.h */,
+				C74DED9813805DA4005DA422 /* SKPhotosetParser.m */,
+				BB0A9D7C12D6A01D004FE3A9 /* SKRSSParser.h */,
+				BB0A9D7D12D6A01D004FE3A9 /* SKRSSParser.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BB0A9D5A12D69BD5004FE3A9 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BB0A9D6712D69BD5004FE3A9 /* SuicideKit-Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		BB0A9D5B12D69BD5004FE3A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB0A9D6612D69BD5004FE3A9 /* SuicideKit-Info.plist */,
+				BB0A9D6812D69BD5004FE3A9 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BB0A9D5C12D69BD5004FE3A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB0A9D6412D69BD5004FE3A9 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB0A9D6312D69BD5004FE3A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB0A9D6212D69BD5004FE3A9 /* SuicideKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C74DEDA313805FC3005DA422 /* HTML Elements */ = {
+			isa = PBXGroup;
+			children = (
+				C74DEDA41380600C005DA422 /* SG-summary-right.txt */,
+				C74DEDA613806095005DA422 /* SG-links.txt */,
+			);
+			name = "HTML Elements";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BB0A9D5F12D69BD5004FE3A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0A9D7E12D6A01D004FE3A9 /* SKRSSParser.h in Headers */,
+				C74DED9913805DA4005DA422 /* SKGirl.h in Headers */,
+				C74DED9B13805DA4005DA422 /* SKPhotoset.h in Headers */,
+				C74DED9D13805DA4005DA422 /* SKPhotosetParser.h in Headers */,
+				C74DEDAD138062F6005DA422 /* SKAsynchronousFetcher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BB0A9D6112D69BD5004FE3A9 /* SuicideKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB0A9D6D12D69BD5004FE3A9 /* Build configuration list for PBXNativeTarget "SuicideKit" */;
+			buildPhases = (
+				BB0A9D5D12D69BD5004FE3A9 /* Sources */,
+				BB0A9D5E12D69BD5004FE3A9 /* Frameworks */,
+				BB0A9D5F12D69BD5004FE3A9 /* Headers */,
+				BB0A9D6012D69BD5004FE3A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuicideKit;
+			productName = FMSuicideKit;
+			productReference = BB0A9D6212D69BD5004FE3A9 /* SuicideKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB0A9D5412D69BD5004FE3A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+				ORGANIZATIONNAME = "Felix Morgner";
+			};
+			buildConfigurationList = BB0A9D5712D69BD5004FE3A9 /* Build configuration list for PBXProject "SuicideKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BB0A9D5212D69BD5004FE3A9;
+			productRefGroup = BB0A9D6312D69BD5004FE3A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB0A9D6112D69BD5004FE3A9 /* SuicideKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB0A9D6012D69BD5004FE3A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0A9D6A12D69BD5004FE3A9 /* InfoPlist.strings in Resources */,
+				C74DEDA51380600C005DA422 /* SG-summary-right.txt in Resources */,
+				C74DEDA713806095005DA422 /* SG-links.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB0A9D5D12D69BD5004FE3A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0A9D7F12D6A01D004FE3A9 /* SKRSSParser.m in Sources */,
+				C74DED9A13805DA4005DA422 /* SKGirl.m in Sources */,
+				C74DED9C13805DA4005DA422 /* SKPhotoset.m in Sources */,
+				C74DED9E13805DA4005DA422 /* SKPhotosetParser.m in Sources */,
+				C74DEDAE138062F6005DA422 /* SKAsynchronousFetcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BB0A9D6812D69BD5004FE3A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB0A9D6912D69BD5004FE3A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB0A9D6B12D69BD5004FE3A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BB0A9D6C12D69BD5004FE3A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BB0A9D6E12D69BD5004FE3A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuicideKit-Prefix.pch";
+				INFOPLIST_FILE = "SuicideKit-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = SuicideKit;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		BB0A9D6F12D69BD5004FE3A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuicideKit-Prefix.pch";
+				INFOPLIST_FILE = "SuicideKit-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = SuicideKit;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB0A9D5712D69BD5004FE3A9 /* Build configuration list for PBXProject "SuicideKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0A9D6B12D69BD5004FE3A9 /* Debug */,
+				BB0A9D6C12D69BD5004FE3A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB0A9D6D12D69BD5004FE3A9 /* Build configuration list for PBXNativeTarget "SuicideKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0A9D6E12D69BD5004FE3A9 /* Debug */,
+				BB0A9D6F12D69BD5004FE3A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB0A9D5412D69BD5004FE3A9 /* Project object */;
+}

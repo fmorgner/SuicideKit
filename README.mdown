@@ -1,0 +1,13 @@
+SuicideKit
+==========
+
+SuicideKit is a Cocoa based Objective-C framework for accessing resources stored on http://www.suicidegirls.com. SuicideGirls is a community that celebrates alternative beauty and alternative culture from all over the world. Since 2001, tens of thousands of models have submitted millions of photos to this website hoping to become SuicideGirls.
+
+SuicideKit can easily be integrated into your existing Cocoa application since it uses and supports standard Cocoa techniques like delegation, notifications and bindings. SuicideKit is also fully iOS SDK compatible but it's questinable if an application using resources from http://suicidegirls.com will be permitted in the Apple AppStore due to Apples overly strict policies. Anyway you could use it to develop cool applications for the Cydia software installer for Jailbroken iOS Devices.
+
+Please note that SuicideKit is a work in progress and as such is not fully functional yet. If you'd like to help me I'd be more than happy if you forked it or even better, if I could add you as a co-worker to this project.
+
+Credits
+=======
+
+I'd like to thank Matt Ball for his great piece of software called _doxyclean_. _doxyclean_ allows you to transform your _Doxygen_ ouptut into Apple-style API Documentation which then seamlessly integrates with Xcode and the Apple Developer Documentation. _doxyclean_ can be found at http://github.com/mattball/doxyclean.
