@@ -15,10 +15,9 @@
 		C74DED9A13805DA4005DA422 /* SKGirl.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DED9413805DA4005DA422 /* SKGirl.m */; };
 		C74DED9B13805DA4005DA422 /* SKPhotoset.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DED9513805DA4005DA422 /* SKPhotoset.h */; };
 		C74DED9C13805DA4005DA422 /* SKPhotoset.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DED9613805DA4005DA422 /* SKPhotoset.m */; };
-		C74DED9D13805DA4005DA422 /* SKPhotosetParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DED9713805DA4005DA422 /* SKPhotosetParser.h */; };
-		C74DED9E13805DA4005DA422 /* SKPhotosetParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DED9813805DA4005DA422 /* SKPhotosetParser.m */; };
 		C74DEDAD138062F6005DA422 /* SKAsynchronousFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DEDAB138062F6005DA422 /* SKAsynchronousFetcher.h */; };
 		C74DEDAE138062F6005DA422 /* SKAsynchronousFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DEDAC138062F6005DA422 /* SKAsynchronousFetcher.m */; };
+		C7C138B4141A6C3E00940EB0 /* SRUCTURES.mdown in Resources */ = {isa = PBXBuildFile; fileRef = C7C138B3141A6C3E00940EB0 /* SRUCTURES.mdown */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,10 +32,9 @@
 		C74DED9413805DA4005DA422 /* SKGirl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKGirl.m; sourceTree = "<group>"; };
 		C74DED9513805DA4005DA422 /* SKPhotoset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPhotoset.h; sourceTree = "<group>"; };
 		C74DED9613805DA4005DA422 /* SKPhotoset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKPhotoset.m; sourceTree = "<group>"; };
-		C74DED9713805DA4005DA422 /* SKPhotosetParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPhotosetParser.h; sourceTree = "<group>"; };
-		C74DED9813805DA4005DA422 /* SKPhotosetParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKPhotosetParser.m; sourceTree = "<group>"; };
 		C74DEDAB138062F6005DA422 /* SKAsynchronousFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAsynchronousFetcher.h; sourceTree = "<group>"; };
 		C74DEDAC138062F6005DA422 /* SKAsynchronousFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAsynchronousFetcher.m; sourceTree = "<group>"; };
+		C7C138B3141A6C3E00940EB0 /* SRUCTURES.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SRUCTURES.mdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +69,6 @@
 				C74DED9413805DA4005DA422 /* SKGirl.m */,
 				C74DED9513805DA4005DA422 /* SKPhotoset.h */,
 				C74DED9613805DA4005DA422 /* SKPhotoset.m */,
-				C74DED9713805DA4005DA422 /* SKPhotosetParser.h */,
-				C74DED9813805DA4005DA422 /* SKPhotosetParser.m */,
 				BB0A9D7C12D6A01D004FE3A9 /* SKRSSParser.h */,
 				BB0A9D7D12D6A01D004FE3A9 /* SKRSSParser.m */,
 			);
@@ -90,6 +86,7 @@
 		BB0A9D5B12D69BD5004FE3A9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C7C138B3141A6C3E00940EB0 /* SRUCTURES.mdown */,
 				BB0A9D6612D69BD5004FE3A9 /* SuicideKit-Info.plist */,
 				BB0A9D6812D69BD5004FE3A9 /* InfoPlist.strings */,
 			);
@@ -122,7 +119,6 @@
 				BB0A9D7E12D6A01D004FE3A9 /* SKRSSParser.h in Headers */,
 				C74DED9913805DA4005DA422 /* SKGirl.h in Headers */,
 				C74DED9B13805DA4005DA422 /* SKPhotoset.h in Headers */,
-				C74DED9D13805DA4005DA422 /* SKPhotosetParser.h in Headers */,
 				C74DEDAD138062F6005DA422 /* SKAsynchronousFetcher.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +134,7 @@
 				BB0A9D5E12D69BD5004FE3A9 /* Frameworks */,
 				BB0A9D5F12D69BD5004FE3A9 /* Headers */,
 				BB0A9D6012D69BD5004FE3A9 /* Resources */,
+				C7C8CD221419F82A00DACCD6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -180,10 +177,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB0A9D6A12D69BD5004FE3A9 /* InfoPlist.strings in Resources */,
+				C7C138B4141A6C3E00940EB0 /* SRUCTURES.mdown in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C7C8CD221419F82A00DACCD6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -rf Documentation/xml\nrm -rf Documentation/latex\nrm -rf Documentation/apple\n\nDG=`which doxygen`\n\nif [ DG = \"\" ]; then exit 0;fi\n\ndoxygen Documentation/Doxyfile\nDocumentation/doxyclean/doxyclean.py --name=SuicideKit --input=Documentation/xml/ --output=Documentation/apple";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BB0A9D5D12D69BD5004FE3A9 /* Sources */ = {
@@ -193,7 +207,6 @@
 				BB0A9D7F12D6A01D004FE3A9 /* SKRSSParser.m in Sources */,
 				C74DED9A13805DA4005DA422 /* SKGirl.m in Sources */,
 				C74DED9C13805DA4005DA422 /* SKPhotoset.m in Sources */,
-				C74DED9E13805DA4005DA422 /* SKPhotosetParser.m in Sources */,
 				C74DEDAE138062F6005DA422 /* SKAsynchronousFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,29 +228,32 @@
 		BB0A9D6B12D69BD5004FE3A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
 		BB0A9D6C12D69BD5004FE3A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};

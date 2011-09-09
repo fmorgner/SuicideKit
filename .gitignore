@@ -1,5 +1,6 @@
 Documentation/xml
 Documentation/latex
+Documentation/apple
 .DS_Store
 build/
 *.pbxuser
