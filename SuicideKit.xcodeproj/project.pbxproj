@@ -17,8 +17,6 @@
 		C74DED9C13805DA4005DA422 /* SKPhotoset.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DED9613805DA4005DA422 /* SKPhotoset.m */; };
 		C74DED9D13805DA4005DA422 /* SKPhotosetParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DED9713805DA4005DA422 /* SKPhotosetParser.h */; };
 		C74DED9E13805DA4005DA422 /* SKPhotosetParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DED9813805DA4005DA422 /* SKPhotosetParser.m */; };
-		C74DEDA51380600C005DA422 /* SG-summary-right.txt in Resources */ = {isa = PBXBuildFile; fileRef = C74DEDA41380600C005DA422 /* SG-summary-right.txt */; };
-		C74DEDA713806095005DA422 /* SG-links.txt in Resources */ = {isa = PBXBuildFile; fileRef = C74DEDA613806095005DA422 /* SG-links.txt */; };
 		C74DEDAD138062F6005DA422 /* SKAsynchronousFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DEDAB138062F6005DA422 /* SKAsynchronousFetcher.h */; };
 		C74DEDAE138062F6005DA422 /* SKAsynchronousFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DEDAC138062F6005DA422 /* SKAsynchronousFetcher.m */; };
 /* End PBXBuildFile section */
@@ -37,8 +35,6 @@
 		C74DED9613805DA4005DA422 /* SKPhotoset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKPhotoset.m; sourceTree = "<group>"; };
 		C74DED9713805DA4005DA422 /* SKPhotosetParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPhotosetParser.h; sourceTree = "<group>"; };
 		C74DED9813805DA4005DA422 /* SKPhotosetParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKPhotosetParser.m; sourceTree = "<group>"; };
-		C74DEDA41380600C005DA422 /* SG-summary-right.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "SG-summary-right.txt"; path = "HTML Elements/SG-summary-right.txt"; sourceTree = "<group>"; };
-		C74DEDA613806095005DA422 /* SG-links.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "SG-links.txt"; path = "HTML Elements/SG-links.txt"; sourceTree = "<group>"; };
 		C74DEDAB138062F6005DA422 /* SKAsynchronousFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAsynchronousFetcher.h; sourceTree = "<group>"; };
 		C74DEDAC138062F6005DA422 /* SKAsynchronousFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAsynchronousFetcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,7 +54,6 @@
 		BB0A9D5212D69BD5004FE3A9 = {
 			isa = PBXGroup;
 			children = (
-				C74DEDA313805FC3005DA422 /* HTML Elements */,
 				BB0A9D5912D69BD5004FE3A9 /* Classes */,
 				BB0A9D5A12D69BD5004FE3A9 /* Other Sources */,
 				BB0A9D5B12D69BD5004FE3A9 /* Resources */,
@@ -115,15 +110,6 @@
 				BB0A9D6212D69BD5004FE3A9 /* SuicideKit.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		C74DEDA313805FC3005DA422 /* HTML Elements */ = {
-			isa = PBXGroup;
-			children = (
-				C74DEDA41380600C005DA422 /* SG-summary-right.txt */,
-				C74DEDA613806095005DA422 /* SG-links.txt */,
-			);
-			name = "HTML Elements";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,8 +180,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB0A9D6A12D69BD5004FE3A9 /* InfoPlist.strings in Resources */,
-				C74DEDA51380600C005DA422 /* SG-summary-right.txt in Resources */,
-				C74DEDA713806095005DA422 /* SG-links.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,3 +20,10 @@ __GIRLNAME__ is a placeholder for a girls name.
 
 * The girl herself:        http://suicidegirls.com/girls/__GIRLNAME__/
 * All photosets of a girl: http://suicidegirls.com/girls/__GIRLNAME__/pics/all/
+
+This is the structure of the code javascript array code for storing the location of the photos contained in a photoset
+----------------------------------------------------------------------------------------------------------------------
+
+__i__ is a placeholder for an index in the array, 0 being the first.
+
+`list[`__i__`] = new ImageHolder("http://img.suicidegirls.com/media/girls/Chrysis/photos/A Dull Roar   /01.jpg", "",false, "1200", "800");`
