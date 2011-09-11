@@ -74,7 +74,7 @@
 
 - (void) parserDidEndDocument:(NSXMLParser *)parser
 	{
-	[self setResult:(NSArray*)[parsedDocument copy]];
+	[self setResult:(NSArray*)parsedDocument];
 	
 	if(delegate && [delegate respondsToSelector:@selector(rssParserDidFinishParsing:)])
 		{
