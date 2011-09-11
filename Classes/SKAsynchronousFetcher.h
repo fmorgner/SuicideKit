@@ -11,7 +11,7 @@
  *
  * \author Felix Morgner http://www.felixmorgner.ch
  *
- * \version 1.0
+ * \since 1.0
  *
  * \brief A class to asynchronously fetch data from the network.
  *

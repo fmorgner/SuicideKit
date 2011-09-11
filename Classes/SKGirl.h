@@ -10,13 +10,12 @@
 
 
 @interface SKGirl : NSObject
-	{
-	}
 
 - (id) initWithName:(NSString*)aName andPhotosets:(NSArray*)thePhotosets;
+
 + (SKGirl*) girlWithName:(NSString*)aName andPhotosets:(NSArray*)thePhotosets;
 
 @property(nonatomic, retain) NSString* name;
-@property(nonatomic, retain) NSArray* photosets;
+@property(nonatomic, retain) NSArray*  photosets;
 
 @end

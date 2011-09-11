@@ -9,6 +9,8 @@
 /*!
  * \class SKPhotoset
  *
+ * \author Felix Morgner
+ *
  * \since 1.0
  *
  * \brief This class represents a SuicideGirls photoset
