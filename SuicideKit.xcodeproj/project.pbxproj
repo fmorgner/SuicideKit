@@ -328,6 +328,7 @@
 				INFOPLIST_FILE = "SuicideKit-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Frameworks";
 				PRODUCT_NAME = SuicideKit;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -347,6 +348,7 @@
 				INFOPLIST_FILE = "SuicideKit-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Frameworks";
 				PRODUCT_NAME = SuicideKit;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
