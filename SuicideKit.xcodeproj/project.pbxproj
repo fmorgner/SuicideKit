@@ -11,6 +11,14 @@
 		BB0A9D6A12D69BD5004FE3A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB0A9D6812D69BD5004FE3A9 /* InfoPlist.strings */; };
 		BB0A9D7E12D6A01D004FE3A9 /* SKRSSParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BB0A9D7C12D6A01D004FE3A9 /* SKRSSParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB0A9D7F12D6A01D004FE3A9 /* SKRSSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0A9D7D12D6A01D004FE3A9 /* SKRSSParser.m */; };
+		BBFF971F141CD152004CEC7A /* common.css in Resources */ = {isa = PBXBuildFile; fileRef = BBFF9717141CD152004CEC7A /* common.css */; };
+		BBFF9720141CD152004CEC7A /* print.css in Resources */ = {isa = PBXBuildFile; fileRef = BBFF9718141CD152004CEC7A /* print.css */; };
+		BBFF9721141CD152004CEC7A /* screen.css in Resources */ = {isa = PBXBuildFile; fileRef = BBFF9719141CD152004CEC7A /* screen.css */; };
+		BBFF9722141CD152004CEC7A /* doxyclean.py in Resources */ = {isa = PBXBuildFile; fileRef = BBFF971A141CD152004CEC7A /* doxyclean.py */; };
+		BBFF9723141CD152004CEC7A /* index2html.xslt in Resources */ = {isa = PBXBuildFile; fileRef = BBFF971B141CD152004CEC7A /* index2html.xslt */; };
+		BBFF9724141CD152004CEC7A /* object.xslt in Resources */ = {isa = PBXBuildFile; fileRef = BBFF971C141CD152004CEC7A /* object.xslt */; };
+		BBFF9725141CD152004CEC7A /* object2html.xslt in Resources */ = {isa = PBXBuildFile; fileRef = BBFF971D141CD152004CEC7A /* object2html.xslt */; };
+		BBFF9726141CD152004CEC7A /* Doxyfile in Resources */ = {isa = PBXBuildFile; fileRef = BBFF971E141CD152004CEC7A /* Doxyfile */; };
 		C74DED9913805DA4005DA422 /* SKGirl.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DED9313805DA4005DA422 /* SKGirl.h */; };
 		C74DED9A13805DA4005DA422 /* SKGirl.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DED9413805DA4005DA422 /* SKGirl.m */; };
 		C74DED9B13805DA4005DA422 /* SKPhotoset.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DED9513805DA4005DA422 /* SKPhotoset.h */; };
@@ -28,6 +36,14 @@
 		BB0A9D6912D69BD5004FE3A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BB0A9D7C12D6A01D004FE3A9 /* SKRSSParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKRSSParser.h; sourceTree = "<group>"; };
 		BB0A9D7D12D6A01D004FE3A9 /* SKRSSParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKRSSParser.m; sourceTree = "<group>"; };
+		BBFF9717141CD152004CEC7A /* common.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = common.css; sourceTree = "<group>"; };
+		BBFF9718141CD152004CEC7A /* print.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = print.css; sourceTree = "<group>"; };
+		BBFF9719141CD152004CEC7A /* screen.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = screen.css; sourceTree = "<group>"; };
+		BBFF971A141CD152004CEC7A /* doxyclean.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = doxyclean.py; sourceTree = "<group>"; };
+		BBFF971B141CD152004CEC7A /* index2html.xslt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = index2html.xslt; sourceTree = "<group>"; };
+		BBFF971C141CD152004CEC7A /* object.xslt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = object.xslt; sourceTree = "<group>"; };
+		BBFF971D141CD152004CEC7A /* object2html.xslt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = object2html.xslt; sourceTree = "<group>"; };
+		BBFF971E141CD152004CEC7A /* Doxyfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Doxyfile; sourceTree = "<group>"; };
 		C74DED9313805DA4005DA422 /* SKGirl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKGirl.h; sourceTree = "<group>"; };
 		C74DED9413805DA4005DA422 /* SKGirl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKGirl.m; sourceTree = "<group>"; };
 		C74DED9513805DA4005DA422 /* SKPhotoset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPhotoset.h; sourceTree = "<group>"; };
@@ -52,6 +68,7 @@
 		BB0A9D5212D69BD5004FE3A9 = {
 			isa = PBXGroup;
 			children = (
+				BBFF9714141CD152004CEC7A /* Documentation */,
 				BB0A9D5912D69BD5004FE3A9 /* Classes */,
 				BB0A9D5A12D69BD5004FE3A9 /* Other Sources */,
 				BB0A9D5B12D69BD5004FE3A9 /* Resources */,
@@ -107,6 +124,37 @@
 				BB0A9D6212D69BD5004FE3A9 /* SuicideKit.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BBFF9714141CD152004CEC7A /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				BBFF9715141CD152004CEC7A /* doxyclean */,
+				BBFF971E141CD152004CEC7A /* Doxyfile */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		BBFF9715141CD152004CEC7A /* doxyclean */ = {
+			isa = PBXGroup;
+			children = (
+				BBFF9716141CD152004CEC7A /* css */,
+				BBFF971A141CD152004CEC7A /* doxyclean.py */,
+				BBFF971B141CD152004CEC7A /* index2html.xslt */,
+				BBFF971C141CD152004CEC7A /* object.xslt */,
+				BBFF971D141CD152004CEC7A /* object2html.xslt */,
+			);
+			path = doxyclean;
+			sourceTree = "<group>";
+		};
+		BBFF9716141CD152004CEC7A /* css */ = {
+			isa = PBXGroup;
+			children = (
+				BBFF9717141CD152004CEC7A /* common.css */,
+				BBFF9718141CD152004CEC7A /* print.css */,
+				BBFF9719141CD152004CEC7A /* screen.css */,
+			);
+			path = css;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +226,14 @@
 			files = (
 				BB0A9D6A12D69BD5004FE3A9 /* InfoPlist.strings in Resources */,
 				C7C138B4141A6C3E00940EB0 /* SRUCTURES.mdown in Resources */,
+				BBFF971F141CD152004CEC7A /* common.css in Resources */,
+				BBFF9720141CD152004CEC7A /* print.css in Resources */,
+				BBFF9721141CD152004CEC7A /* screen.css in Resources */,
+				BBFF9722141CD152004CEC7A /* doxyclean.py in Resources */,
+				BBFF9723141CD152004CEC7A /* index2html.xslt in Resources */,
+				BBFF9724141CD152004CEC7A /* object.xslt in Resources */,
+				BBFF9725141CD152004CEC7A /* object2html.xslt in Resources */,
+				BBFF9726141CD152004CEC7A /* Doxyfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
