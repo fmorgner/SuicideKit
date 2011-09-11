@@ -35,7 +35,7 @@
 
 @end
 
-@protocol FMRSSParserDelegate
+@protocol SKRSSParserDelegate
 
 - (void) rssParserDidFinishParsing:(SKRSSParser*)theParser;
 
