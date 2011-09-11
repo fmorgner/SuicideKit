@@ -48,7 +48,7 @@
 		[currentItem setObject:[currentLink stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] forKey:@"link"];
 		[currentItem setObject:currentDescription forKey:@"description"];
 		[currentItem setObject:currentDate forKey:@"date"];
-		[parsedDocument addObject:[currentItem copy]];
+		[parsedDocument addObject:currentItem];
 		}
 	}
 
