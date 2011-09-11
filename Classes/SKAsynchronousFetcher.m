@@ -1,6 +1,6 @@
 //
 //  SKAsynchronousFetcher.m
-//  FlickrKit
+//  SuicideKit
 //
 //  Created by Felix Morgner on 19.04.11.
 //  Copyright 2011 Felix Morgner. All rights reserved.
@@ -20,6 +20,11 @@
   return self;
 	}
 
++ (SKAsynchronousFetcher *)fetcher
+	{
+	return [[[SKAsynchronousFetcher alloc] init] autorelease];
+	}
+
 - (void)dealloc
 	{
 	[url release];
@@ -27,22 +32,22 @@
   [super dealloc];
 	}
 
-- (void)fetchDataAtURL:(NSURL*)theURL withCompletionHandler:(void (^)(id fetchResult))block
+- (void)fetchDataAtURL:(NSURL*)aURL withCompletionHandler:(void (^)(id fetchResult))block
 	{
 	if(!block)
 		{
-		NSException* exception = [NSException exceptionWithName:@"FlickrKitCompletionHandlerNilException" reason:@"The completion handler must not be NULL" userInfo:nil];
+		NSException* exception = [NSException exceptionWithName:@"SuicideKitCompletionHandlerNilException" reason:@"The completion handler must not be NULL" userInfo:nil];
 		[exception raise];
 		return;
 		}
-	if(!theURL)
+	if(!aURL)
 		{
-		NSException* exception = [NSException exceptionWithName:@"FlickrKitURLNilException" reason:@"The URL must not be nil" userInfo:nil];
+		NSException* exception = [NSException exceptionWithName:@"SuicideKitURLNilException" reason:@"The URL must not be nil" userInfo:nil];
 		[exception raise];
 		return;
 		}
 	
-	url = [theURL copy];
+	url = [aURL copy];
 	completionHandler = [block copy];
 	
 	NSURLRequest* request = [NSURLRequest requestWithURL:url];

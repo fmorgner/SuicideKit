@@ -1,9 +1,9 @@
 //
-//  PNRSSParserDelegate.h
-//  Polizeinews
+//  SKRSSParser.h
+//  SuicideKit
 //
 //  Created by Felix Morgner on 01.07.10.
-//  Copyright 2010 Felix Morgner. All rights reserved.
+//  Copyright 2011 Felix Morgner.
 //
 
 #import <Foundation/Foundation.h>
