@@ -10,20 +10,43 @@
 
 @implementation SKRSSParser
 
-@synthesize result;
+#pragma mark - Initialization
 
-- (void) setDelegate:(id)aDelegate
+- (id)initWithCompletionHandler:(void(^)(id parseResult))aCompletionHandler
 	{
-	delegate = [aDelegate retain];
+	if((self = [super init]))
+		{
+		completionHandler = [aCompletionHandler copy];
+		}
+	
+	return self;
 	}
+	
+- (id)initWithDelegate:(id<SKRSSParserDelegate>)aDelegate
+	{
+	if((self = [super init]))
+		{
+		delegate = aDelegate;
+		}
+	
+	return self;
+	}
+
++ (SKRSSParser*)parserWithCompletionHandler:(void(^)(id parseResult))aCompletionHandler
+	{
+	return [[[SKRSSParser alloc] initWithCompletionHandler:aCompletionHandler] autorelease];
+	}
+
++ (SKRSSParser*)parserWithDelegate:(id<SKRSSParserDelegate>)aDelegate
+	{
+	return [[[SKRSSParser alloc] initWithDelegate:aDelegate] autorelease];
+	}
+
+#pragma mark - Parsing
 
 - (void) parserDidStartDocument:(NSXMLParser *)parser
 	{
 	parsedDocument = [[NSMutableArray alloc] init];
-	}
-
-- (void) parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError
-	{
 	}
 
 - (void) parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
@@ -72,16 +95,44 @@
 		}
 	}
 
+#pragma mark - Parse result handling
+
 - (void) parserDidEndDocument:(NSXMLParser *)parser
 	{
-	[self setResult:(NSArray*)parsedDocument];
-	
-	if(delegate && [delegate respondsToSelector:@selector(rssParserDidFinishParsing:)])
+	if(delegate && [delegate conformsToProtocol:@protocol(SKRSSParserDelegate)])
 		{
-		[delegate rssParserDidFinishParsing:self];
+		[delegate rssParserDidFinishParsing:self document:(NSArray*)parsedDocument];
 		}
 
-	NSDictionary* userInfo = [NSDictionary dictionaryWithObject:result forKey:@"parsedDocument"];
-	[[NSNotificationCenter defaultCenter] postNotificationName:@"FMRSSParserFinishedParsing" object:self userInfo:userInfo];
+	NSDictionary* userInfo = [NSDictionary dictionaryWithObject:(NSArray*)parsedDocument forKey:SKRSSParserDocumentKey];
+	[[NSNotificationCenter defaultCenter] postNotificationName:SKRSSParserDidFinishParsingNotification object:self userInfo:userInfo];
+	
+	completionHandler((NSArray*)parsedDocument);
+	}
+
+- (void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError
+	{
+	if(delegate && [delegate conformsToProtocol:@protocol(SKRSSParserDelegate)])
+		{
+		[delegate rssParserDidFailParsing:self withError:parseError];
+		}
+
+	NSDictionary* userInfo = [NSDictionary dictionaryWithObject:parseError forKey:SKRSSParserErrorKey];
+	[[NSNotificationCenter defaultCenter] postNotificationName:SKRSSParserDidFailParsingNotification object:self userInfo:userInfo];
+	
+	completionHandler(parseError);
+	}
+
+- (void)parser:(NSXMLParser *)parser validationErrorOccurred:(NSError *)validationError
+	{
+	if(delegate && [delegate conformsToProtocol:@protocol(SKRSSParserDelegate)])
+		{
+		[delegate rssParserDidFailParsing:self withError:validationError];
+		}
+
+	NSDictionary* userInfo = [NSDictionary dictionaryWithObject:validationError forKey:SKRSSParserErrorKey];
+	[[NSNotificationCenter defaultCenter] postNotificationName:SKRSSParserDidFailParsingNotification object:self userInfo:userInfo];
+	
+	completionHandler(validationError);
 	}
 @end
