@@ -6,9 +6,9 @@
 //  Copyright 2011 Felix Morgner.
 //
 
-#import "SKRSSParser.h"
+#import "FMRSSParser.h"
 
-@implementation SKRSSParser
+@implementation FMRSSParser
 
 #pragma mark - Initialization
 
@@ -22,7 +22,7 @@
 	return self;
 	}
 	
-- (id)initWithDelegate:(id<SKRSSParserDelegate>)aDelegate
+- (id)initWithDelegate:(id<FMRSSParserDelegate>)aDelegate
 	{
 	if((self = [super init]))
 		{
@@ -32,14 +32,14 @@
 	return self;
 	}
 
-+ (SKRSSParser*)parserWithCompletionHandler:(void(^)(id parseResult))aCompletionHandler
++ (FMRSSParser*)parserWithCompletionHandler:(void(^)(id parseResult))aCompletionHandler
 	{
-	return [[[SKRSSParser alloc] initWithCompletionHandler:aCompletionHandler] autorelease];
+	return [[[FMRSSParser alloc] initWithCompletionHandler:aCompletionHandler] autorelease];
 	}
 
-+ (SKRSSParser*)parserWithDelegate:(id<SKRSSParserDelegate>)aDelegate
++ (FMRSSParser*)parserWithDelegate:(id<FMRSSParserDelegate>)aDelegate
 	{
-	return [[[SKRSSParser alloc] initWithDelegate:aDelegate] autorelease];
+	return [[[FMRSSParser alloc] initWithDelegate:aDelegate] autorelease];
 	}
 
 #pragma mark - Parsing
@@ -99,39 +99,39 @@
 
 - (void) parserDidEndDocument:(NSXMLParser *)parser
 	{
-	if(delegate && [delegate conformsToProtocol:@protocol(SKRSSParserDelegate)])
+	if(delegate && [delegate conformsToProtocol:@protocol(FMRSSParserDelegate)])
 		{
 		[delegate rssParserDidFinishParsing:self document:(NSArray*)parsedDocument];
 		}
 
-	NSDictionary* userInfo = [NSDictionary dictionaryWithObject:(NSArray*)parsedDocument forKey:SKRSSParserDocumentKey];
-	[[NSNotificationCenter defaultCenter] postNotificationName:SKRSSParserDidFinishParsingNotification object:self userInfo:userInfo];
+	NSDictionary* userInfo = [NSDictionary dictionaryWithObject:(NSArray*)parsedDocument forKey:FMRSSParserDocumentKey];
+	[[NSNotificationCenter defaultCenter] postNotificationName:FMRSSParserDidFinishParsingNotification object:self userInfo:userInfo];
 	
 	completionHandler((NSArray*)parsedDocument);
 	}
 
 - (void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError
 	{
-	if(delegate && [delegate conformsToProtocol:@protocol(SKRSSParserDelegate)])
+	if(delegate && [delegate conformsToProtocol:@protocol(FMRSSParserDelegate)])
 		{
 		[delegate rssParserDidFailParsing:self withError:parseError];
 		}
 
-	NSDictionary* userInfo = [NSDictionary dictionaryWithObject:parseError forKey:SKRSSParserErrorKey];
-	[[NSNotificationCenter defaultCenter] postNotificationName:SKRSSParserDidFailParsingNotification object:self userInfo:userInfo];
+	NSDictionary* userInfo = [NSDictionary dictionaryWithObject:parseError forKey:FMRSSParserErrorKey];
+	[[NSNotificationCenter defaultCenter] postNotificationName:FMRSSParserDidFailParsingNotification object:self userInfo:userInfo];
 	
 	completionHandler(parseError);
 	}
 
 - (void)parser:(NSXMLParser *)parser validationErrorOccurred:(NSError *)validationError
 	{
-	if(delegate && [delegate conformsToProtocol:@protocol(SKRSSParserDelegate)])
+	if(delegate && [delegate conformsToProtocol:@protocol(FMRSSParserDelegate)])
 		{
 		[delegate rssParserDidFailParsing:self withError:validationError];
 		}
 
-	NSDictionary* userInfo = [NSDictionary dictionaryWithObject:validationError forKey:SKRSSParserErrorKey];
-	[[NSNotificationCenter defaultCenter] postNotificationName:SKRSSParserDidFailParsingNotification object:self userInfo:userInfo];
+	NSDictionary* userInfo = [NSDictionary dictionaryWithObject:validationError forKey:FMRSSParserErrorKey];
+	[[NSNotificationCenter defaultCenter] postNotificationName:FMRSSParserDidFailParsingNotification object:self userInfo:userInfo];
 	
 	completionHandler(validationError);
 	}

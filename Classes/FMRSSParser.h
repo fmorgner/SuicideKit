@@ -1,13 +1,13 @@
 //
-//  SKRSSParser.h
-//  SuicideKit
+//  FMRSSParser.h
+//  Yet another XMLParser delegate for parsing RSS feeds.
 //
 //  Created by Felix Morgner on 01.07.10.
 //  Copyright 2011 Felix Morgner.
 //
 
 /*!
- * \class SKRSSParser SKRSSParser.h
+ * \class FMRSSParser FMRSSParser.h
  *
  * \author Felix Morgner http://www.felixmorgner.ch
  *
@@ -17,25 +17,25 @@
  *
  * This class can be used in conjuntion with NSXMLParser to parse RSS feeds. It implements all 3 common Cocoa
  * callback schemes to inform you about the state of the parsing. You can either listen for the
- * SKRSSParserDidFinishParsingNotification and SKRSSParserDidFailParsingNotification notifiactions, supply a 
- * delegate object implementing the SKRSSParserDelegate protocol or supply it with a block called the completionHandler.
+ * FMRSSParserDidFinishParsingNotification and FMRSSParserDidFailParsingNotification notifiactions, supply a 
+ * delegate object implementing the FMRSSParserDelegate protocol or supply it with a block called the completionHandler.
  * On successful parsing, this class provides you with an NSArray object containing several NSDictionary object wich
  * represent each node in the RSS feed. On Failure it gives to an NSError object, describing the occured error.
  */
 
 #import <Foundation/Foundation.h>
 
-static NSString* SKRSSParserDidFinishParsingNotification = @"SKRSSParserDidFinishParsing"; /*!< The ParserDidFinish notification name*/
-static NSString* SKRSSParserDidFailParsingNotification = @"SKRSSParserDidFailParsing"; /*!< The ParserDidFinish notification name*/
+static NSString* FMRSSParserDidFinishParsingNotification = @"SKRSSParserDidFinishParsing"; /*!< The ParserDidFinish notification name*/
+static NSString* FMRSSParserDidFailParsingNotification = @"SKRSSParserDidFailParsing"; /*!< The ParserDidFinish notification name*/
 
-static NSString* SKRSSParserDocumentKey = @"parsedDocument"; /*!< The user info dictionary key for the parsed document*/
-static NSString* SKRSSParserErrorKey = @"parseError"; /*!< The user info dictionary key for the parse error*/
+static NSString* FMRSSParserDocumentKey = @"parsedDocument"; /*!< The user info dictionary key for the parsed document*/
+static NSString* FMRSSParserErrorKey = @"parseError"; /*!< The user info dictionary key for the parse error*/
 
 static NSString* FMRSSParserErrorDomain = @"FMRSSParserErrorDomain"; /*!< The error domain for any errors that might occur*/
 
-@protocol SKRSSParserDelegate; // forward declaration of the SKRSSParserDelegate protocol
+@protocol FMRSSParserDelegate; // forward declaration of the SKRSSParserDelegate protocol
 
-@interface SKRSSParser : NSObject <NSXMLParserDelegate>
+@interface FMRSSParser : NSObject <NSXMLParserDelegate>
 	{
 	@private
 		NSString* currentElement;
@@ -82,7 +82,7 @@ static NSString* FMRSSParserErrorDomain = @"FMRSSParserErrorDomain"; /*!< The er
  *
  * This method allocates and initializes an autoreleased SKRSSParser object and sets the comletionHandler ivar to be the block you supply.
  */
-+ (SKRSSParser*)parserWithCompletionHandler:(void(^)(id parseResult))aCompletionHandler;
++ (FMRSSParser*)parserWithCompletionHandler:(void(^)(id parseResult))aCompletionHandler;
 
 /*!
  * \param aDelegate An object that implements the SKRSSParser delegate protocol
@@ -96,7 +96,7 @@ static NSString* FMRSSParserErrorDomain = @"FMRSSParserErrorDomain"; /*!< The er
  * This method initializes a newly allcoated SKRSSParser object and sets the delegate ivar to be the object you supply.
  * Your delegate object must implement the SKRSSParserDelegate protocol.
  */
-- (id)initWithDelegate:(id<SKRSSParserDelegate>)aDelegate;
+- (id)initWithDelegate:(id<FMRSSParserDelegate>)aDelegate;
 
 /*!
  * \param aDelegate An object that implements the SKRSSParser delegate protocol
@@ -110,13 +110,13 @@ static NSString* FMRSSParserErrorDomain = @"FMRSSParserErrorDomain"; /*!< The er
  * This method allocates and initializes an autoreleased SKRSSParser object and sets the delegate ivar to be the object you supply.
  * Your delegate object must implement the SKRSSParserDelegate protocol.
  */
-+ (SKRSSParser*)parserWithDelegate:(id<SKRSSParserDelegate>)aDelegate;
++ (FMRSSParser*)parserWithDelegate:(id<FMRSSParserDelegate>)aDelegate;
 
 /*! @} */
 @end
 
 /*!
- * \protocol SKRSSParserDelegate SKRSSParser.h
+ * \protocol FMRSSParserDelegate FMRSSParser.h
  *
  * \author Felix Morgner http://www.felixmorgner.ch
  *
@@ -129,7 +129,7 @@ static NSString* FMRSSParserErrorDomain = @"FMRSSParserErrorDomain"; /*!< The er
  * scheme to be informed when ever an error occurs or the parsing finishes.
  */
 
-@protocol SKRSSParserDelegate
+@protocol FMRSSParserDelegate
 
 @required
 
@@ -144,7 +144,7 @@ static NSString* FMRSSParserErrorDomain = @"FMRSSParserErrorDomain"; /*!< The er
  * This method gets called whenever parsing finishes. It supplies you with the parsed document in the form of an NSArray of NSDictionary objects
  * of which each one represents an entry in the RSS feed.
  */
-- (void) rssParserDidFinishParsing:(SKRSSParser*)theParser document:(NSArray*)aDocument;
+- (void) rssParserDidFinishParsing:(FMRSSParser*)theParser document:(NSArray*)aDocument;
 
 /*!
  * \param theParser The object that invoked the method
@@ -157,6 +157,6 @@ static NSString* FMRSSParserErrorDomain = @"FMRSSParserErrorDomain"; /*!< The er
  * This methods gets called whenever an error occurs. Errors include parse errors and validation errors. You might examine the supplied anError
  * object to handle the occured error. For more information refer to the Apple Developer Documentation on the NSXMLParserDelegate protocol.
  */
-- (void) rssParserDidFailParsing:(SKRSSParser*)theParser withError:(NSError*)anError;
+- (void) rssParserDidFailParsing:(FMRSSParser*)theParser withError:(NSError*)anError;
 
 @end
