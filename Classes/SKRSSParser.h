@@ -31,6 +31,8 @@ static NSString* SKRSSParserDidFailParsingNotification = @"SKRSSParserDidFailPar
 static NSString* SKRSSParserDocumentKey = @"parsedDocument"; /*!< The user info dictionary key for the parsed document*/
 static NSString* SKRSSParserErrorKey = @"parseError"; /*!< The user info dictionary key for the parse error*/
 
+static NSString* FMRSSParserErrorDomain = @"FMRSSParserErrorDomain"; /*!< The error domain for any errors that might occur*/
+
 @protocol SKRSSParserDelegate; // forward declaration of the SKRSSParserDelegate protocol
 
 @interface SKRSSParser : NSObject <NSXMLParserDelegate>
