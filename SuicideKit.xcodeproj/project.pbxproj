@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		BB0A9D6512D69BD5004FE3A9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0A9D6412D69BD5004FE3A9 /* Cocoa.framework */; };
 		BB0A9D6A12D69BD5004FE3A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB0A9D6812D69BD5004FE3A9 /* InfoPlist.strings */; };
-		BB0A9D7E12D6A01D004FE3A9 /* SKRSSParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BB0A9D7C12D6A01D004FE3A9 /* SKRSSParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB0A9D7F12D6A01D004FE3A9 /* SKRSSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0A9D7D12D6A01D004FE3A9 /* SKRSSParser.m */; };
+		BB0A9D7E12D6A01D004FE3A9 /* FMRSSParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BB0A9D7C12D6A01D004FE3A9 /* FMRSSParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB0A9D7F12D6A01D004FE3A9 /* FMRSSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0A9D7D12D6A01D004FE3A9 /* FMRSSParser.m */; };
 		BBFF971F141CD152004CEC7A /* common.css in Resources */ = {isa = PBXBuildFile; fileRef = BBFF9717141CD152004CEC7A /* common.css */; };
 		BBFF9720141CD152004CEC7A /* print.css in Resources */ = {isa = PBXBuildFile; fileRef = BBFF9718141CD152004CEC7A /* print.css */; };
 		BBFF9721141CD152004CEC7A /* screen.css in Resources */ = {isa = PBXBuildFile; fileRef = BBFF9719141CD152004CEC7A /* screen.css */; };
@@ -34,8 +34,8 @@
 		BB0A9D6612D69BD5004FE3A9 /* SuicideKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SuicideKit-Info.plist"; sourceTree = "<group>"; };
 		BB0A9D6712D69BD5004FE3A9 /* SuicideKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SuicideKit-Prefix.pch"; sourceTree = "<group>"; };
 		BB0A9D6912D69BD5004FE3A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BB0A9D7C12D6A01D004FE3A9 /* SKRSSParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKRSSParser.h; sourceTree = "<group>"; };
-		BB0A9D7D12D6A01D004FE3A9 /* SKRSSParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKRSSParser.m; sourceTree = "<group>"; };
+		BB0A9D7C12D6A01D004FE3A9 /* FMRSSParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRSSParser.h; sourceTree = "<group>"; };
+		BB0A9D7D12D6A01D004FE3A9 /* FMRSSParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRSSParser.m; sourceTree = "<group>"; };
 		BBFF9717141CD152004CEC7A /* common.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = common.css; sourceTree = "<group>"; };
 		BBFF9718141CD152004CEC7A /* print.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = print.css; sourceTree = "<group>"; };
 		BBFF9719141CD152004CEC7A /* screen.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = screen.css; sourceTree = "<group>"; };
@@ -86,8 +86,8 @@
 				C74DED9413805DA4005DA422 /* SKGirl.m */,
 				C74DED9513805DA4005DA422 /* SKPhotoset.h */,
 				C74DED9613805DA4005DA422 /* SKPhotoset.m */,
-				BB0A9D7C12D6A01D004FE3A9 /* SKRSSParser.h */,
-				BB0A9D7D12D6A01D004FE3A9 /* SKRSSParser.m */,
+				BB0A9D7C12D6A01D004FE3A9 /* FMRSSParser.h */,
+				BB0A9D7D12D6A01D004FE3A9 /* FMRSSParser.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -164,7 +164,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB0A9D7E12D6A01D004FE3A9 /* SKRSSParser.h in Headers */,
+				BB0A9D7E12D6A01D004FE3A9 /* FMRSSParser.h in Headers */,
 				C74DED9913805DA4005DA422 /* SKGirl.h in Headers */,
 				C74DED9B13805DA4005DA422 /* SKPhotoset.h in Headers */,
 				C74DEDAD138062F6005DA422 /* SKAsynchronousFetcher.h in Headers */,
@@ -261,7 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB0A9D7F12D6A01D004FE3A9 /* SKRSSParser.m in Sources */,
+				BB0A9D7F12D6A01D004FE3A9 /* FMRSSParser.m in Sources */,
 				C74DED9A13805DA4005DA422 /* SKGirl.m in Sources */,
 				C74DED9C13805DA4005DA422 /* SKPhotoset.m in Sources */,
 				C74DEDAE138062F6005DA422 /* SKAsynchronousFetcher.m in Sources */,
