@@ -182,7 +182,7 @@
 				BB0A9D5E12D69BD5004FE3A9 /* Frameworks */,
 				BB0A9D5F12D69BD5004FE3A9 /* Headers */,
 				BB0A9D6012D69BD5004FE3A9 /* Resources */,
-				C7C8CD221419F82A00DACCD6 /* ShellScript */,
+				C7C8CD221419F82A00DACCD6 /* Build Documentation */,
 			);
 			buildRules = (
 			);
@@ -240,13 +240,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C7C8CD221419F82A00DACCD6 /* ShellScript */ = {
+		C7C8CD221419F82A00DACCD6 /* Build Documentation */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Build Documentation";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
