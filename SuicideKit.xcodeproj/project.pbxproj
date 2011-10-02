@@ -11,65 +11,13 @@
 		BB0A9D6A12D69BD5004FE3A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB0A9D6812D69BD5004FE3A9 /* InfoPlist.strings */; };
 		BB0A9D7E12D6A01D004FE3A9 /* FMRSSParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BB0A9D7C12D6A01D004FE3A9 /* FMRSSParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB0A9D7F12D6A01D004FE3A9 /* FMRSSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0A9D7D12D6A01D004FE3A9 /* FMRSSParser.m */; };
-		BB61E702141CF37100839347 /* SKAsynchronousFetcher.html in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6CF141CF37100839347 /* SKAsynchronousFetcher.html */; };
-		BB61E703141CF37100839347 /* SKPhotoset.html in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6D0141CF37100839347 /* SKPhotoset.html */; };
-		BB61E704141CF37100839347 /* SKRSSParser.html in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6D1141CF37100839347 /* SKRSSParser.html */; };
-		BB61E705141CF37100839347 /* common.css in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6D3141CF37100839347 /* common.css */; };
-		BB61E706141CF37100839347 /* print.css in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6D4141CF37100839347 /* print.css */; };
-		BB61E707141CF37100839347 /* screen.css in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6D5141CF37100839347 /* screen.css */; };
-		BB61E708141CF37100839347 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6D6141CF37100839347 /* index.html */; };
-		BB61E709141CF37100839347 /* SKPhotosetDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6D8141CF37100839347 /* SKPhotosetDelegate.html */; };
-		BB61E70A141CF37100839347 /* SKRSSParserDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6D9141CF37100839347 /* SKRSSParserDelegate.html */; };
-		BB61E70B141CF37100839347 /* SKAsynchronousFetcher.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6DC141CF37100839347 /* SKAsynchronousFetcher.xml */; };
-		BB61E70C141CF37100839347 /* SKPhotoset.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6DD141CF37100839347 /* SKPhotoset.xml */; };
-		BB61E70D141CF37100839347 /* SKRSSParser.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6DE141CF37100839347 /* SKRSSParser.xml */; };
-		BB61E70E141CF37100839347 /* index.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6DF141CF37100839347 /* index.xml */; };
-		BB61E70F141CF37100839347 /* SKPhotosetDelegate.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6E1141CF37100839347 /* SKPhotosetDelegate.xml */; };
-		BB61E710141CF37100839347 /* SKRSSParserDelegate.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6E2141CF37100839347 /* SKRSSParserDelegate.xml */; };
-		BB61E711141CF37100839347 /* annotated.tex in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6E4141CF37100839347 /* annotated.tex */; };
-		BB61E712141CF37100839347 /* doxygen.sty in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6E5141CF37100839347 /* doxygen.sty */; };
-		BB61E713141CF37100839347 /* interface_s_k_asynchronous_fetcher.tex in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6E6141CF37100839347 /* interface_s_k_asynchronous_fetcher.tex */; };
-		BB61E714141CF37100839347 /* interface_s_k_girl.tex in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6E7141CF37100839347 /* interface_s_k_girl.tex */; };
-		BB61E715141CF37100839347 /* interface_s_k_photoset.tex in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6E8141CF37100839347 /* interface_s_k_photoset.tex */; };
-		BB61E716141CF37100839347 /* interface_s_k_r_s_s_parser.tex in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6E9141CF37100839347 /* interface_s_k_r_s_s_parser.tex */; };
 		BB61E717141CF37100839347 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = BB61E6EA141CF37100839347 /* Makefile */; };
-		BB61E718141CF37100839347 /* protocol_s_k_photoset_delegate-p.tex in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6EB141CF37100839347 /* protocol_s_k_photoset_delegate-p.tex */; };
-		BB61E719141CF37100839347 /* protocol_s_k_r_s_s_parser_delegate-p.tex in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6EC141CF37100839347 /* protocol_s_k_r_s_s_parser_delegate-p.tex */; };
-		BB61E71A141CF37100839347 /* refman.tex in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6ED141CF37100839347 /* refman.tex */; };
-		BB61E71B141CF37100839347 /* _s_k_asynchronous_fetcher_8h.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6EF141CF37100839347 /* _s_k_asynchronous_fetcher_8h.xml */; };
-		BB61E71C141CF37100839347 /* _s_k_asynchronous_fetcher_8m.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6F0141CF37100839347 /* _s_k_asynchronous_fetcher_8m.xml */; };
-		BB61E71D141CF37100839347 /* _s_k_girl_8h.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6F1141CF37100839347 /* _s_k_girl_8h.xml */; };
-		BB61E71E141CF37100839347 /* _s_k_girl_8m.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6F2141CF37100839347 /* _s_k_girl_8m.xml */; };
-		BB61E71F141CF37100839347 /* _s_k_photoset_8h.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6F3141CF37100839347 /* _s_k_photoset_8h.xml */; };
-		BB61E720141CF37100839347 /* _s_k_photoset_8m.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6F4141CF37100839347 /* _s_k_photoset_8m.xml */; };
-		BB61E721141CF37100839347 /* _s_k_r_s_s_parser_8h.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6F5141CF37100839347 /* _s_k_r_s_s_parser_8h.xml */; };
-		BB61E722141CF37100839347 /* _s_k_r_s_s_parser_8m.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6F6141CF37100839347 /* _s_k_r_s_s_parser_8m.xml */; };
-		BB61E723141CF37100839347 /* combine.xslt in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6F7141CF37100839347 /* combine.xslt */; };
-		BB61E724141CF37100839347 /* compound.xsd in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6F8141CF37100839347 /* compound.xsd */; };
-		BB61E725141CF37100839347 /* dir_55faea16a7b24007349093202c96083e.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6F9141CF37100839347 /* dir_55faea16a7b24007349093202c96083e.xml */; };
-		BB61E726141CF37100839347 /* index.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6FA141CF37100839347 /* index.xml */; };
-		BB61E727141CF37100839347 /* index.xsd in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6FB141CF37100839347 /* index.xsd */; };
-		BB61E728141CF37100839347 /* interface_s_k_asynchronous_fetcher.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6FC141CF37100839347 /* interface_s_k_asynchronous_fetcher.xml */; };
-		BB61E729141CF37100839347 /* interface_s_k_girl.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6FD141CF37100839347 /* interface_s_k_girl.xml */; };
-		BB61E72A141CF37100839347 /* interface_s_k_photoset.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6FE141CF37100839347 /* interface_s_k_photoset.xml */; };
-		BB61E72B141CF37100839347 /* interface_s_k_r_s_s_parser.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E6FF141CF37100839347 /* interface_s_k_r_s_s_parser.xml */; };
-		BB61E72C141CF37100839347 /* protocol_s_k_photoset_delegate-p.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E700141CF37100839347 /* protocol_s_k_photoset_delegate-p.xml */; };
-		BB61E72D141CF37100839347 /* protocol_s_k_r_s_s_parser_delegate-p.xml in Resources */ = {isa = PBXBuildFile; fileRef = BB61E701141CF37100839347 /* protocol_s_k_r_s_s_parser_delegate-p.xml */; };
-		BBFF971F141CD152004CEC7A /* common.css in Resources */ = {isa = PBXBuildFile; fileRef = BBFF9717141CD152004CEC7A /* common.css */; };
-		BBFF9720141CD152004CEC7A /* print.css in Resources */ = {isa = PBXBuildFile; fileRef = BBFF9718141CD152004CEC7A /* print.css */; };
-		BBFF9721141CD152004CEC7A /* screen.css in Resources */ = {isa = PBXBuildFile; fileRef = BBFF9719141CD152004CEC7A /* screen.css */; };
-		BBFF9722141CD152004CEC7A /* doxyclean.py in Resources */ = {isa = PBXBuildFile; fileRef = BBFF971A141CD152004CEC7A /* doxyclean.py */; };
-		BBFF9723141CD152004CEC7A /* index2html.xslt in Resources */ = {isa = PBXBuildFile; fileRef = BBFF971B141CD152004CEC7A /* index2html.xslt */; };
-		BBFF9724141CD152004CEC7A /* object.xslt in Resources */ = {isa = PBXBuildFile; fileRef = BBFF971C141CD152004CEC7A /* object.xslt */; };
-		BBFF9725141CD152004CEC7A /* object2html.xslt in Resources */ = {isa = PBXBuildFile; fileRef = BBFF971D141CD152004CEC7A /* object2html.xslt */; };
-		BBFF9726141CD152004CEC7A /* Doxyfile in Resources */ = {isa = PBXBuildFile; fileRef = BBFF971E141CD152004CEC7A /* Doxyfile */; };
 		C74DED9913805DA4005DA422 /* SKGirl.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DED9313805DA4005DA422 /* SKGirl.h */; };
 		C74DED9A13805DA4005DA422 /* SKGirl.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DED9413805DA4005DA422 /* SKGirl.m */; };
 		C74DED9B13805DA4005DA422 /* SKPhotoset.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DED9513805DA4005DA422 /* SKPhotoset.h */; };
 		C74DED9C13805DA4005DA422 /* SKPhotoset.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DED9613805DA4005DA422 /* SKPhotoset.m */; };
 		C74DEDAD138062F6005DA422 /* SKAsynchronousFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DEDAB138062F6005DA422 /* SKAsynchronousFetcher.h */; };
 		C74DEDAE138062F6005DA422 /* SKAsynchronousFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DEDAC138062F6005DA422 /* SKAsynchronousFetcher.m */; };
-		C7C138B4141A6C3E00940EB0 /* SRUCTURES.mdown in Resources */ = {isa = PBXBuildFile; fileRef = C7C138B3141A6C3E00940EB0 /* SRUCTURES.mdown */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -437,58 +385,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB0A9D6A12D69BD5004FE3A9 /* InfoPlist.strings in Resources */,
-				C7C138B4141A6C3E00940EB0 /* SRUCTURES.mdown in Resources */,
-				BBFF971F141CD152004CEC7A /* common.css in Resources */,
-				BBFF9720141CD152004CEC7A /* print.css in Resources */,
-				BBFF9721141CD152004CEC7A /* screen.css in Resources */,
-				BBFF9722141CD152004CEC7A /* doxyclean.py in Resources */,
-				BBFF9723141CD152004CEC7A /* index2html.xslt in Resources */,
-				BBFF9724141CD152004CEC7A /* object.xslt in Resources */,
-				BBFF9725141CD152004CEC7A /* object2html.xslt in Resources */,
-				BBFF9726141CD152004CEC7A /* Doxyfile in Resources */,
-				BB61E702141CF37100839347 /* SKAsynchronousFetcher.html in Resources */,
-				BB61E703141CF37100839347 /* SKPhotoset.html in Resources */,
-				BB61E704141CF37100839347 /* SKRSSParser.html in Resources */,
-				BB61E705141CF37100839347 /* common.css in Resources */,
-				BB61E706141CF37100839347 /* print.css in Resources */,
-				BB61E707141CF37100839347 /* screen.css in Resources */,
-				BB61E708141CF37100839347 /* index.html in Resources */,
-				BB61E709141CF37100839347 /* SKPhotosetDelegate.html in Resources */,
-				BB61E70A141CF37100839347 /* SKRSSParserDelegate.html in Resources */,
-				BB61E70B141CF37100839347 /* SKAsynchronousFetcher.xml in Resources */,
-				BB61E70C141CF37100839347 /* SKPhotoset.xml in Resources */,
-				BB61E70D141CF37100839347 /* SKRSSParser.xml in Resources */,
-				BB61E70E141CF37100839347 /* index.xml in Resources */,
-				BB61E70F141CF37100839347 /* SKPhotosetDelegate.xml in Resources */,
-				BB61E710141CF37100839347 /* SKRSSParserDelegate.xml in Resources */,
-				BB61E711141CF37100839347 /* annotated.tex in Resources */,
-				BB61E712141CF37100839347 /* doxygen.sty in Resources */,
-				BB61E713141CF37100839347 /* interface_s_k_asynchronous_fetcher.tex in Resources */,
-				BB61E714141CF37100839347 /* interface_s_k_girl.tex in Resources */,
-				BB61E715141CF37100839347 /* interface_s_k_photoset.tex in Resources */,
-				BB61E716141CF37100839347 /* interface_s_k_r_s_s_parser.tex in Resources */,
-				BB61E718141CF37100839347 /* protocol_s_k_photoset_delegate-p.tex in Resources */,
-				BB61E719141CF37100839347 /* protocol_s_k_r_s_s_parser_delegate-p.tex in Resources */,
-				BB61E71A141CF37100839347 /* refman.tex in Resources */,
-				BB61E71B141CF37100839347 /* _s_k_asynchronous_fetcher_8h.xml in Resources */,
-				BB61E71C141CF37100839347 /* _s_k_asynchronous_fetcher_8m.xml in Resources */,
-				BB61E71D141CF37100839347 /* _s_k_girl_8h.xml in Resources */,
-				BB61E71E141CF37100839347 /* _s_k_girl_8m.xml in Resources */,
-				BB61E71F141CF37100839347 /* _s_k_photoset_8h.xml in Resources */,
-				BB61E720141CF37100839347 /* _s_k_photoset_8m.xml in Resources */,
-				BB61E721141CF37100839347 /* _s_k_r_s_s_parser_8h.xml in Resources */,
-				BB61E722141CF37100839347 /* _s_k_r_s_s_parser_8m.xml in Resources */,
-				BB61E723141CF37100839347 /* combine.xslt in Resources */,
-				BB61E724141CF37100839347 /* compound.xsd in Resources */,
-				BB61E725141CF37100839347 /* dir_55faea16a7b24007349093202c96083e.xml in Resources */,
-				BB61E726141CF37100839347 /* index.xml in Resources */,
-				BB61E727141CF37100839347 /* index.xsd in Resources */,
-				BB61E728141CF37100839347 /* interface_s_k_asynchronous_fetcher.xml in Resources */,
-				BB61E729141CF37100839347 /* interface_s_k_girl.xml in Resources */,
-				BB61E72A141CF37100839347 /* interface_s_k_photoset.xml in Resources */,
-				BB61E72B141CF37100839347 /* interface_s_k_r_s_s_parser.xml in Resources */,
-				BB61E72C141CF37100839347 /* protocol_s_k_photoset_delegate-p.xml in Resources */,
-				BB61E72D141CF37100839347 /* protocol_s_k_r_s_s_parser_delegate-p.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
