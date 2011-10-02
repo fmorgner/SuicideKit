@@ -6,4 +6,5 @@ build/
 *.pbxuser
 *.mode1v3
 *.perspectivev3
-SuicideKit.xcodeproj/project.xcworkspace/xcuserdata/seuche.xcuserdatad/UserInterfaceState.xcuserstate
+SuicideKit.xcodeproj/xcuserdata/*
+SuicideKit.xcodeproj/project.xcworksace/xcuserdata/*
