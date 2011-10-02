@@ -1,6 +1,6 @@
 //
-//  SKRSSParser.m
-//  SuicideKit
+//  FMRSSParser.m
+//  Yet another XMLParser delegate for parsing RSS feeds.
 //
 //  Created by Felix Morgner on 01.07.10.
 //  Copyright 2011 Felix Morgner.
