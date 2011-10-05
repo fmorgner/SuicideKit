@@ -22,7 +22,7 @@
 	return self;
 	}
 
-- (id) initWithName:(NSString*)aName andPhotosets:(NSArray*)thePhotosets
+- (id) initWithName:(NSString*)aName andPhotosets:(NSArray*)thePhotosets withAdditionalData:(BOOL)shouldFetchAdditionalData
 	{
 	if((self = [super init]))
 		{
@@ -32,7 +32,7 @@
 	return self;
 	}
 
-+ (SKGirl*) girlWithName:(NSString*)aName andPhotosets:(NSArray*)thePhotosets
++ (SKGirl*) girlWithName:(NSString*)aName andPhotosets:(NSArray*)thePhotosets withAdditionalData:(BOOL)shouldFetchAdditionalData
 	{
 	return [[[SKGirl alloc] initWithName:aName andPhotosets:thePhotosets] autorelease];
 	}

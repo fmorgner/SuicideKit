@@ -359,7 +359,7 @@
 		BB0A9D5412D69BD5004FE3A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0410;
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "Felix Morgner";
 			};
 			buildConfigurationList = BB0A9D5712D69BD5004FE3A9 /* Build configuration list for PBXProject "SuicideKit" */;
