@@ -36,7 +36,7 @@
 /*!
  * \param aName The name of the girl
  * \param thePhotosets The photoset associated with that girl
- * \param withAdditionalData A BOOL indicating if you'd like SuicideKit to fetch additional data (birthday, etc.)
+ * \param shouldFetchAdditionalData A BOOL indicating if you'd like SuicideKit to fetch additional data (birthday, etc.)
  *
  * \return A SKGirl object initialized with the name and photosets that were supplied
  *
@@ -53,7 +53,7 @@
 /*!
  * \param aName The name of the girl
  * \param thePhotosets The photoset associated with that girl
- * \param withAdditionalData A BOOL indicating if you'd like SuicideKit to fetch additional data (birthday, etc.)
+ * \param shouldFetchAdditionalData A BOOL indicating if you'd like SuicideKit to fetch additional data (birthday, etc.)
  *
  * \return An autoreleased SKGirl object initialized with the name and photosets that were supplied
  *

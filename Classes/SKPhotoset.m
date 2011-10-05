@@ -72,7 +72,7 @@
 	return self;
 	}
 
-- (SKGirl*)photosetWithContentsOfURL:(NSURL*)aURL immediatelyLoadPhotos:(BOOL)immediatelyLoadPhotos delegate:(id<SKPhotosetDelegate>)aDelegate
+- (SKPhotoset*)photosetWithContentsOfURL:(NSURL*)aURL immediatelyLoadPhotos:(BOOL)immediatelyLoadPhotos delegate:(id<SKPhotosetDelegate>)aDelegate
 	{
 	return [[[SKPhotoset alloc] initWithContentsOfURL:aURL immediatelyLoadPhotos:immediatelyLoadPhotos delegate:aDelegate] autorelease];
 	}

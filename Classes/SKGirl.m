@@ -34,7 +34,12 @@
 
 + (SKGirl*) girlWithName:(NSString*)aName andPhotosets:(NSArray*)thePhotosets withAdditionalData:(BOOL)shouldFetchAdditionalData
 	{
-	return [[[SKGirl alloc] initWithName:aName andPhotosets:thePhotosets] autorelease];
+	return [[[SKGirl alloc] initWithName:aName andPhotosets:thePhotosets withAdditionalData:shouldFetchAdditionalData] autorelease];
+	}
+
+- (void) fetchData
+	{
+	
 	}
 
 @end
