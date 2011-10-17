@@ -48,7 +48,7 @@
  *
  * This method initializes a newly allocated SKGirl object with the name and photosets that were supplied.
  */
-- (id) initWithName:(NSString*)aName andPhotosets:(NSArray*)thePhotosets withAdditionalData:(BOOL)shouldFetchAdditionalData;
+- (id)initWithName:(NSString*)aName andPhotosets:(NSArray*)thePhotosets withAdditionalData:(BOOL)shouldFetchAdditionalData;
 
 /*!
  * \param aName The name of the girl
@@ -65,7 +65,7 @@
  *
  * This method allocates and initializes an SKGirl object with the name and photosets that were supplied.
  */
-+ (SKGirl*) girlWithName:(NSString*)aName andPhotosets:(NSArray*)thePhotosets withAdditionalData:(BOOL)shouldFetchAdditionalData;
++ (SKGirl*)girlWithName:(NSString*)aName andPhotosets:(NSArray*)thePhotosets withAdditionalData:(BOOL)shouldFetchAdditionalData;
 
 /*! @} */
 
