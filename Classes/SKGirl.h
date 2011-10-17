@@ -73,7 +73,7 @@
  * \name Aquiring data
  */
 
-- (void) fetchData;
+- (void) fetchAdditionalData;
 
 /*! @} */
 
