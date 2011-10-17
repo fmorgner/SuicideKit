@@ -42,4 +42,9 @@
 	
 	}
 
+- (void)fetchPhotosets
+	{
+	
+	}
+
 @end

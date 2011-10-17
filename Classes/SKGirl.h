@@ -73,7 +73,9 @@
  * \name Aquiring data
  */
 
-- (void) fetchAdditionalData;
+- (void)fetchAdditionalData;
+
+- (void)fetchPhotosets;
 
 /*! @} */
 
