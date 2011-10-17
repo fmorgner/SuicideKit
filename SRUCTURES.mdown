@@ -27,3 +27,87 @@ This is the structure of the code javascript array code for storing the location
 __i__ is a placeholder for an index in the array, 0 being the first.
 
 `list[`__i__`] = new ImageHolder("http://img.suicidegirls.com/media/girls/Chrysis/photos/A Dull Roar   /01.jpg", "",false, "1200", "800");`
+
+This is the structure of the code for the girl minibar on a girls page
+----------------------------------------------------------------------
+
+` <div class="home_minibar girlmb">
+	<div class="portrait"><a href="/girls/Chrysis/"><img src="http://img.suicidegirls.com/media/girls/Chrysis/girl_pic_small.jpg?1316636502" width="79" height="58" alt="SuicideGirl: Chrysis" /></a></div>
+	<div id="minibarMiddle">
+
+<div class="badge">
+<img height="14" border="0" alt="suicidegirl" src="http://img.suicidegirls.com/img/member/badge_suicidegirl_pink_bg.gif"/></div>
+<div class="mbname">
+<p class="mbblurb"><span class="name"><a href="/girls/Chrysis/" id="miniHeaderAlias">Chrysis</a></span>
+<span class="sentence">I'll stand for nothing less, or never stand again.</span></p><p class="mblinks">		</p>
+	</div>
+</div>
+<div class="status private">I&rsquo;m private</div><div class="iefix">&nbsp;</div> `
+
+This is the structure of the code for the list of a girls photosets
+-------------------------------------------------------------------
+
+` <div class="profileSgPics" id="sgAlbumList">
+<div class="preview" id="album_246385" title="Chrysis: Needful Things">
+	<a class="pngSpank" href="/girls/Chrysis/albums/site/25712/"><img src="/media/albums/2/71/25712/setpreview_medium.jpg" width="169" height="104" alt="SuicideGirls: Needful Things"></a>
+	<div class="date">Sep 2, 2011</div>
+	<div class="comments"><a href="/boards/The+Pictures/360504/">1055</a> <a href="/boards/The+Pictures/360504/"><img src="http://img.suicidegirls.com/img/common/speech_bubble_mini_grey.gif" width="14" height="12" alt="Comments" title="Read Comments"></a></div>
+	<a class="badge_link" href="/girls/Chrysis/albums/site/25712/" title="This set is up for member review."><div class="badge_review"></div></a></div>
+<div class="preview" id="album_237197" title="Chrysis: A Dull Roar   ">
+	<a class="pngSpank" href="/girls/Chrysis/photos/A+Dull+Roar+++/"><img src="/media/girls/Chrysis/photos/A Dull Roar   /setpreview_medium.jpg" width="169" height="104" alt="SuicideGirls: A Dull Roar   "></a>
+	<div class="date">May 19, 2011</div>
+	<div class="comments"><a href="/boards/The+Pictures/351591/">3073</a> <a href="/boards/The+Pictures/351591/"><img src="http://img.suicidegirls.com/img/common/speech_bubble_mini_grey.gif" width="14" height="12" alt="Comments" title="Read Comments"></a></div>
+	</div>
+<div class="clearProp"></div>
+</div> `
+
+This is the structure of the code for a girls list of albums
+------------------------------------------------------------
+
+` <div class="browserContent">
+
+											<div class="card long">
+							<h1><a href="/girls/Chrysis/albums/member/188201/">Attachments</a></h1>
+							<a href="/girls/Chrysis/albums/member/188201/"><img src="/media/members/1/77/427771/188201/previewmedium.jpg?1318815484" width="167" height="167" alt="Attachments"></a>
+							<div class="info">
+				<p><span class="prefix">PICS:</span> 2180</p>
+				<p><span class="prefix">UPDATED:</span> Oct 16, 2011</p>
+
+				<p><span class="prefix">COMMENTS:</span> <a href="/girls/Chrysis/albums/member/188201/">76</a></p>
+
+							</div>
+						</div>
+												<div class="card long">
+							<h1><a href="/girls/Chrysis/albums/member/190027/">Girl</a></h1>
+							<a href="/girls/Chrysis/albums/member/190027/"><img src="/media/members/1/77/427771/190027/previewmedium.jpg?1309363013" width="167" height="167" alt="Girl"></a>
+							<div class="info">
+				<p><span class="prefix">PICS:</span> 282</p>
+				<p><span class="prefix">UPDATED:</span> Jun 29, 2011</p>
+
+				<p><span class="prefix">COMMENTS:</span> <a href="/girls/Chrysis/albums/member/190027/">174</a></p>
+
+							</div>
+						</div>
+												<div class="card long">
+							<h1><a href="/girls/Chrysis/albums/member/188234/">Blood &amp; Guts</a></h1>
+							<a href="/girls/Chrysis/albums/member/188234/"><img src="/media/members/1/77/427771/188234/previewmedium.jpg?1309014253" width="167" height="167" alt="Blood &amp; Guts"></a>
+							<div class="info">
+				<p><span class="prefix">PICS:</span> 69</p>
+				<p><span class="prefix">UPDATED:</span> Jun 25, 2011</p>
+
+				<p><span class="prefix">COMMENTS:</span> <a href="/girls/Chrysis/albums/member/188234/">60</a></p>
+
+							</div>
+						</div>
+												<div class="card long">
+							<h1><a href="/girls/Chrysis/albums/member/187428/">Elements</a></h1>
+							<a href="/girls/Chrysis/albums/member/187428/"><img src="/media/members/1/77/427771/187428/previewmedium.jpg?1304030967" width="167" height="167" alt="Elements"></a>
+							<div class="info">
+				<p><span class="prefix">PICS:</span> 229</p>
+				<p><span class="prefix">UPDATED:</span> Apr 28, 2011</p>
+
+				<p><span class="prefix">COMMENTS:</span> <a href="/girls/Chrysis/albums/member/187428/">20</a></p>
+
+							</div>
+						</div>
+</div> `
