@@ -31,7 +31,7 @@ __i__ is a placeholder for an index in the array, 0 being the first.
 This is the structure of the code for the girl minibar on a girls page
 ----------------------------------------------------------------------
 
-	<div class="home_minibar girlmb">
+	`<div class="home_minibar girlmb">
 		<div class="portrait"><a href="/girls/Chrysis/"><img src="http://img.suicidegirls.com/media/girls/Chrysis/girl_pic_small.jpg?1316636502" width="79" height="58" alt="SuicideGirl: Chrysis" /></a></div>
 		<div id="minibarMiddle">
 
@@ -43,7 +43,7 @@ This is the structure of the code for the girl minibar on a girls page
 						</div>
 					</div>
 					<div class="status private">I&rsquo;m private</div>
-					<div class="iefix">&nbsp;</div>
+					<div class="iefix">&nbsp;</div>`
 
 This is the structure of the code for the list of a girls photosets
 -------------------------------------------------------------------
