@@ -12,7 +12,7 @@
 
 @synthesize name, photosets;
 
-- (id) init
+- (id)init
 	{
 	if((self = [super init]))
 		{
@@ -22,7 +22,7 @@
 	return self;
 	}
 
-- (id) initWithName:(NSString*)aName andPhotosets:(NSArray*)thePhotosets withAdditionalData:(BOOL)shouldFetchAdditionalData
+- (id)initWithName:(NSString*)aName andPhotosets:(NSArray*)thePhotosets withAdditionalData:(BOOL)shouldFetchAdditionalData
 	{
 	if((self = [super init]))
 		{
@@ -37,7 +37,7 @@
 	return [[[SKGirl alloc] initWithName:aName andPhotosets:thePhotosets withAdditionalData:shouldFetchAdditionalData] autorelease];
 	}
 
-- (void) fetchData
+- (void)fetchData
 	{
 	
 	}
