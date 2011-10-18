@@ -48,18 +48,47 @@ This is the structure of the code for the girl minibar on a girls page
 This is the structure of the code for the list of a girls photosets
 -------------------------------------------------------------------
 
-` <div class="profileSgPics" id="sgAlbumList">
-<div class="preview" id="album_246385" title="Chrysis: Needful Things">
-	<a class="pngSpank" href="/girls/Chrysis/albums/site/25712/"><img src="/media/albums/2/71/25712/setpreview_medium.jpg" width="169" height="104" alt="SuicideGirls: Needful Things"></a>
-	<div class="date">Sep 2, 2011</div>
-	<div class="comments"><a href="/boards/The+Pictures/360504/">1055</a> <a href="/boards/The+Pictures/360504/"><img src="http://img.suicidegirls.com/img/common/speech_bubble_mini_grey.gif" width="14" height="12" alt="Comments" title="Read Comments"></a></div>
-	<a class="badge_link" href="/girls/Chrysis/albums/site/25712/" title="This set is up for member review."><div class="badge_review"></div></a></div>
-<div class="preview" id="album_237197" title="Chrysis: A Dull Roar   ">
-	<a class="pngSpank" href="/girls/Chrysis/photos/A+Dull+Roar+++/"><img src="/media/girls/Chrysis/photos/A Dull Roar   /setpreview_medium.jpg" width="169" height="104" alt="SuicideGirls: A Dull Roar   "></a>
-	<div class="date">May 19, 2011</div>
-	<div class="comments"><a href="/boards/The+Pictures/351591/">3073</a> <a href="/boards/The+Pictures/351591/"><img src="http://img.suicidegirls.com/img/common/speech_bubble_mini_grey.gif" width="14" height="12" alt="Comments" title="Read Comments"></a></div>
+`<div class="profileSgPics" id="sgAlbumList">
+	
+	
+	<div class="preview" id="album_246385" title="Chrysis: Needful Things">
+		<a class="pngSpank" href="/girls/Chrysis/albums/site/25712/">
+			<img src="/media/albums/2/71/25712/setpreview_medium.jpg" width="169" height="104" alt="SuicideGirls: Needful Things">
+		</a>
+		<div class="date">
+			Sep 2, 2011
+		</div>
+		<div class="comments">
+			<a href="/boards/The+Pictures/360504/">1055</a>
+			<a href="/boards/The+Pictures/360504/">
+				<img src="http://img.suicidegirls.com/img/common/speech_bubble_mini_grey.gif" width="14" height="12" alt="Comments" title="Read Comments">
+			</a>
+		</div>
+		<a class="badge_link" href="/girls/Chrysis/albums/site/25712/" title="This set is up for member review.">
+			<div class="badge_review">
+			</div>
+		</a>
 	</div>
-<div class="clearProp"></div>
+
+
+	<div class="preview" id="album_237197" title="Chrysis: A Dull Roar   ">
+		<a class="pngSpank" href="/girls/Chrysis/photos/A+Dull+Roar+++/">
+			<img src="/media/girls/Chrysis/photos/A Dull Roar   /setpreview_medium.jpg" width="169" height="104" alt="SuicideGirls: A Dull Roar   ">
+		</a>
+		<div class="date">
+			May 19, 2011
+		</div>
+		<div class="comments">
+			<a href="/boards/The+Pictures/351591/">3073</a>
+			<a href="/boards/The+Pictures/351591/">
+				<img src="http://img.suicidegirls.com/img/common/speech_bubble_mini_grey.gif" width="14" height="12" alt="Comments" title="Read Comments">
+			</a>
+		</div>
+	</div>
+
+	<div class="clearProp">
+	</div>
+	
 </div> `
 
 This is the structure of the code for a girls list of albums
