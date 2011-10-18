@@ -108,8 +108,12 @@
 			
 			for(NSString* key in [photosetDictionary allKeys])
 				{
-				[photosetArray addObject:[SKPhotoset photosetWithContentsOfURL:[photosetDictionary objectForKey:key] immediatelyLoadPhotos:NO delegate:nil]];
+				SKPhotoset* photoset = [SKPhotoset photosetWithContentsOfURL:[photosetDictionary objectForKey:key] immediatelyLoadPhotos:NO delegate:nil];
+				[photoset setGirl:self];
+				[photosetArray addObject:photoset];
 				}
+			
+			self.photosets = (NSArray*)photosetArray;
 			}
 		}
 	

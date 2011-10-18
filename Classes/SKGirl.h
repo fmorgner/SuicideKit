@@ -86,8 +86,8 @@ static NSString* SKPhotosetIndexURLString = @"http://suicidegirls.com/girls/%@/p
  * \name Properties
  */
 
-@property(nonatomic, retain) NSString* name; /*!< The name of the girl*/
-@property(nonatomic, retain) NSArray*  photosets; /*!< The photosets of the girl*/
+@property(copy) NSString* name; /*!< The name of the girl*/
+@property(copy) NSArray*  photosets; /*!< The photosets of the girl*/
 
 /*! @} */
 
