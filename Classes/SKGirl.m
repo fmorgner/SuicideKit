@@ -8,10 +8,12 @@
 
 #import "SKGirl.h"
 #import "SKAsynchronousFetcher.h"
+#import "SKInternalConstants.h"
+#import "SKPhotoset.h"
 
 @interface SKGirl(Private)
 
-- (void)parsePhotosetIndexHTML:(NSString*)HTMLString;
+- (void)parsePhotosetIndexHTML:(NSString*)htmlString;
 
 @end
 
@@ -58,7 +60,7 @@
 		
 		if([fetchResult isKindOfClass:[NSData class]])
 			{
-			NSString* receivedHTML = [[NSString alloc] initWithData:fetchResult encoding:NSASCIIStringEncoding];
+			NSString* receivedHTML = [[[NSString alloc] initWithData:fetchResult encoding:NSASCIIStringEncoding] autorelease];
 			[self parsePhotosetIndexHTML:receivedHTML];
 			}
 		else
@@ -73,9 +75,45 @@
 
 @implementation SKGirl(Private)
 
-- (void)parsePhotosetIndexHTML:(NSString *)HTMLString
+- (void)parsePhotosetIndexHTML:(NSString *)htmlString
 	{
+	NSError* error;
+	NSXMLDocument* htmlDocument = [[NSXMLDocument alloc] initWithXMLString:htmlString options:NSXMLDocumentTidyHTML error:nil];
 	
+	
+	if(![[[[htmlDocument nodesForXPath:SKInternalIndexPageTitleXPath error:nil] objectAtIndex:0] stringValue] isEqualToString:SKInternalIndexPageTitle])
+		{
+		NSArray* nodes = [htmlDocument nodesForXPath:SKInternalGirlPhotosetIndexXPath error:&error];
+		NSXMLNode* theNode = [nodes objectAtIndex:0];
+		
+		NSMutableDictionary* photosetDictionary = [NSMutableDictionary dictionary];
+		
+		for(NSXMLNode* node in [theNode children])
+			{
+			if([(NSXMLElement*)node attributeForName:@"id"])
+				{
+				NSString* photosetTitle = [[(NSXMLElement*)node attributeForName:@"title"] stringValue];
+				NSString* photosetURL = [[(NSXMLElement*)[[node children] objectAtIndex:0] attributeForName:@"href"] stringValue];
+				
+				if([photosetURL rangeOfString:@"albums/site"].location == NSNotFound)
+					{
+					[photosetDictionary setValue:[NSURL URLWithString:[NSString stringWithFormat:@"http://suicidegirls.com/%@", photosetURL]] forKey:photosetTitle];
+					}
+				}
+			}
+		
+		if([photosetDictionary count])
+			{
+			NSMutableArray* photosetArray = [NSMutableArray array];
+			
+			for(NSString* key in [photosetDictionary allKeys])
+				{
+				[photosetArray addObject:[SKPhotoset photosetWithContentsOfURL:[photosetDictionary objectForKey:key] immediatelyLoadPhotos:NO delegate:nil]];
+				}
+			}
+		}
+	
+	[htmlDocument release];
 	}
 
 @end

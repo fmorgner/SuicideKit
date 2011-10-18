@@ -12,6 +12,7 @@
 		BB0A9D7E12D6A01D004FE3A9 /* FMRSSParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BB0A9D7C12D6A01D004FE3A9 /* FMRSSParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB0A9D7F12D6A01D004FE3A9 /* FMRSSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0A9D7D12D6A01D004FE3A9 /* FMRSSParser.m */; };
 		BB61E717141CF37100839347 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = BB61E6EA141CF37100839347 /* Makefile */; };
+		BBEB4E9B144DE05900E10F95 /* SKInternalConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = BBEB4E9A144DE05900E10F95 /* SKInternalConstants.h */; };
 		C74DED9913805DA4005DA422 /* SKGirl.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DED9313805DA4005DA422 /* SKGirl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C74DED9A13805DA4005DA422 /* SKGirl.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DED9413805DA4005DA422 /* SKGirl.m */; };
 		C74DED9B13805DA4005DA422 /* SKPhotoset.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DED9513805DA4005DA422 /* SKPhotoset.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -72,6 +73,7 @@
 		BB61E6FF141CF37100839347 /* interface_s_k_r_s_s_parser.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = interface_s_k_r_s_s_parser.xml; sourceTree = "<group>"; };
 		BB61E700141CF37100839347 /* protocol_s_k_photoset_delegate-p.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "protocol_s_k_photoset_delegate-p.xml"; sourceTree = "<group>"; };
 		BB61E701141CF37100839347 /* protocol_s_k_r_s_s_parser_delegate-p.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "protocol_s_k_r_s_s_parser_delegate-p.xml"; sourceTree = "<group>"; };
+		BBEB4E9A144DE05900E10F95 /* SKInternalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKInternalConstants.h; sourceTree = "<group>"; };
 		BBFF9717141CD152004CEC7A /* common.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = common.css; sourceTree = "<group>"; };
 		BBFF9718141CD152004CEC7A /* print.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = print.css; sourceTree = "<group>"; };
 		BBFF9719141CD152004CEC7A /* screen.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = screen.css; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		BB0A9D5912D69BD5004FE3A9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BBEB4E9A144DE05900E10F95 /* SKInternalConstants.h */,
 				C74DEDAB138062F6005DA422 /* SKAsynchronousFetcher.h */,
 				C74DEDAC138062F6005DA422 /* SKAsynchronousFetcher.m */,
 				C74DED9313805DA4005DA422 /* SKGirl.h */,
@@ -328,6 +331,7 @@
 				C74DED9913805DA4005DA422 /* SKGirl.h in Headers */,
 				C74DED9B13805DA4005DA422 /* SKPhotoset.h in Headers */,
 				C74DEDAD138062F6005DA422 /* SKAsynchronousFetcher.h in Headers */,
+				BBEB4E9B144DE05900E10F95 /* SKInternalConstants.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
