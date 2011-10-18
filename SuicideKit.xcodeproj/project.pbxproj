@@ -12,11 +12,11 @@
 		BB0A9D7E12D6A01D004FE3A9 /* FMRSSParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BB0A9D7C12D6A01D004FE3A9 /* FMRSSParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB0A9D7F12D6A01D004FE3A9 /* FMRSSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0A9D7D12D6A01D004FE3A9 /* FMRSSParser.m */; };
 		BB61E717141CF37100839347 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = BB61E6EA141CF37100839347 /* Makefile */; };
-		C74DED9913805DA4005DA422 /* SKGirl.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DED9313805DA4005DA422 /* SKGirl.h */; };
+		C74DED9913805DA4005DA422 /* SKGirl.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DED9313805DA4005DA422 /* SKGirl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C74DED9A13805DA4005DA422 /* SKGirl.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DED9413805DA4005DA422 /* SKGirl.m */; };
-		C74DED9B13805DA4005DA422 /* SKPhotoset.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DED9513805DA4005DA422 /* SKPhotoset.h */; };
+		C74DED9B13805DA4005DA422 /* SKPhotoset.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DED9513805DA4005DA422 /* SKPhotoset.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C74DED9C13805DA4005DA422 /* SKPhotoset.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DED9613805DA4005DA422 /* SKPhotoset.m */; };
-		C74DEDAD138062F6005DA422 /* SKAsynchronousFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DEDAB138062F6005DA422 /* SKAsynchronousFetcher.h */; };
+		C74DEDAD138062F6005DA422 /* SKAsynchronousFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DEDAB138062F6005DA422 /* SKAsynchronousFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C74DEDAE138062F6005DA422 /* SKAsynchronousFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DEDAC138062F6005DA422 /* SKAsynchronousFetcher.m */; };
 /* End PBXBuildFile section */
 
