@@ -29,7 +29,6 @@
 			{
 			NSString* htmlString = [[[NSString alloc] initWithData:htmlData encoding:NSASCIIStringEncoding] autorelease];
 			NSString* photosetName = nil;
-			NSString* girlName = nil;
 			NSMutableArray* URLArray = [NSMutableArray array];
 	
 			NSString* scannerString = htmlString;
@@ -52,13 +51,15 @@
 				[scanner  scanUpToString:@"list[" intoString:nil];
 				}
 			
+			self.URLs = (NSArray*)URLArray;
+			
 			scanner = [NSScanner scannerWithString:[[URLArray objectAtIndex:0] absoluteString]];
 			
-			[scanner scanUpToString:@"girls/" intoString:nil];
-			[scanner setScanLocation:([scanner scanLocation] + 6)];
-			[scanner scanUpToString:@"photos/" intoString:&girlName];
-			[scanner setScanLocation:([scanner scanLocation] + 7)];
+			[scanner scanUpToString:@"/photos/" intoString:nil];
+			[scanner setScanLocation:([scanner scanLocation] + 8)];
 			[scanner scanUpToString:@"/" intoString:&photosetName];
+			
+			self.title = [photosetName stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 			
 			scanner = nil;
 			

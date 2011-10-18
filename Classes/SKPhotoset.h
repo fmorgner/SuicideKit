@@ -85,7 +85,7 @@
  * - Instantiate an "empty" instance of SKPhotoset and use SKPhotoset#loadContensAtURL:immediatelyLoadPhotos:delegate:
  * - Do URL loading and the potential photo loading yourself and use SKPhotoset#photosetWithURLs:photos:
  */
-+ (SKGirl*)photosetWithContentsOfURL:(NSURL*)aURL immediatelyLoadPhotos:(BOOL)immediatelyLoadPhotos delegate:(id<SKPhotosetDelegate>)aDelegate;
++ (SKPhotoset*)photosetWithContentsOfURL:(NSURL*)aURL immediatelyLoadPhotos:(BOOL)immediatelyLoadPhotos delegate:(id<SKPhotosetDelegate>)aDelegate;
 
 /*! @} */
 
