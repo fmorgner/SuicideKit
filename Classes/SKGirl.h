@@ -26,6 +26,8 @@
  * take a look into the SKPhotoset documentation.
  */
 
+static NSString* SKPhotosetIndexURLString = @"http://suicidegirls.com/girls/%@/pics/all/";
+
 
 @interface SKGirl : NSObject
 

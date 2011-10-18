@@ -7,6 +7,13 @@
 //
 
 #import "SKGirl.h"
+#import "SKAsynchronousFetcher.h"
+
+@interface SKGirl(Private)
+
+- (void)parsePhotosetIndexHTML:(NSString*)HTMLString;
+
+@end
 
 @implementation SKGirl
 
@@ -43,6 +50,30 @@
 	}
 
 - (void)fetchPhotosets
+	{
+	SKAsynchronousFetcher* fetcher = [SKAsynchronousFetcher fetcher];
+	NSURL* photosetsIndexURL = [NSURL URLWithString:[NSString stringWithFormat:SKPhotosetIndexURLString, name]];
+	
+	[fetcher fetchDataAtURL:photosetsIndexURL withCompletionHandler:^(id fetchResult) {
+		
+		if([fetchResult isKindOfClass:[NSData class]])
+			{
+			NSString* receivedHTML = [[NSString alloc] initWithData:fetchResult encoding:NSASCIIStringEncoding];
+			[self parsePhotosetIndexHTML:receivedHTML];
+			}
+		else
+			{
+			// TODO: implement gracefull error handling
+			}
+			
+	}];
+	}
+
+@end
+
+@implementation SKGirl(Private)
+
+- (void)parsePhotosetIndexHTML:(NSString *)HTMLString
 	{
 	
 	}
