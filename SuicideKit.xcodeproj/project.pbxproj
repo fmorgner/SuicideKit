@@ -19,7 +19,32 @@
 		C74DED9C13805DA4005DA422 /* SKPhotoset.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DED9613805DA4005DA422 /* SKPhotoset.m */; };
 		C74DEDAD138062F6005DA422 /* SKAsynchronousFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = C74DEDAB138062F6005DA422 /* SKAsynchronousFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C74DEDAE138062F6005DA422 /* SKAsynchronousFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DEDAC138062F6005DA422 /* SKAsynchronousFetcher.m */; };
+		C7E0CFDA144E190000762C99 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0A9D6412D69BD5004FE3A9 /* Cocoa.framework */; };
+		C7E0CFE4144E190000762C99 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7E0CFE2144E190000762C99 /* InfoPlist.strings */; };
+		C7E0CFE6144E190000762C99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E0CFE5144E190000762C99 /* main.m */; };
+		C7E0CFEA144E190000762C99 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C7E0CFE8144E190000762C99 /* Credits.rtf */; };
+		C7E0CFED144E190000762C99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E0CFEC144E190000762C99 /* AppDelegate.m */; };
+		C7E0CFF0144E190000762C99 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E0CFEE144E190000762C99 /* MainMenu.xib */; };
+		C7E0CFF5144E192200762C99 /* SuicideKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0A9D6212D69BD5004FE3A9 /* SuicideKit.framework */; };
+		C7E0CFF7144E194100762C99 /* SuicideKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB0A9D6212D69BD5004FE3A9 /* SuicideKit.framework */; };
+		C7E0CFFA144E19CF00762C99 /* AppController.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E0CFF8144E19CF00762C99 /* AppController.h */; };
+		C7E0CFFB144E19CF00762C99 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E0CFF9144E19CF00762C99 /* AppController.m */; };
+		C7E0D007144EF1C600762C99 /* NSString+FMStringAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E0D005144EF1C600762C99 /* NSString+FMStringAdditions.h */; };
+		C7E0D008144EF1C600762C99 /* NSString+FMStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E0D006144EF1C600762C99 /* NSString+FMStringAdditions.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C7E0CFF6144E192A00762C99 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C7E0CFF7144E194100762C99 /* SuicideKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BB0A9D6212D69BD5004FE3A9 /* SuicideKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SuicideKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +114,22 @@
 		C74DEDAB138062F6005DA422 /* SKAsynchronousFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAsynchronousFetcher.h; sourceTree = "<group>"; };
 		C74DEDAC138062F6005DA422 /* SKAsynchronousFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAsynchronousFetcher.m; sourceTree = "<group>"; };
 		C7C138B3141A6C3E00940EB0 /* SRUCTURES.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SRUCTURES.mdown; sourceTree = "<group>"; };
+		C7E0CFD8144E190000762C99 /* SKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E0CFDC144E190000762C99 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C7E0CFDD144E190000762C99 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C7E0CFDE144E190000762C99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C7E0CFE1144E190000762C99 /* SKDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SKDemo-Info.plist"; sourceTree = "<group>"; };
+		C7E0CFE3144E190000762C99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C7E0CFE5144E190000762C99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C7E0CFE7144E190000762C99 /* SKDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SKDemo-Prefix.pch"; sourceTree = "<group>"; };
+		C7E0CFE9144E190000762C99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C7E0CFEB144E190000762C99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C7E0CFEC144E190000762C99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C7E0CFEF144E190000762C99 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C7E0CFF8144E19CF00762C99 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		C7E0CFF9144E19CF00762C99 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		C7E0D005144EF1C600762C99 /* NSString+FMStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FMStringAdditions.h"; sourceTree = "<group>"; };
+		C7E0D006144EF1C600762C99 /* NSString+FMStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FMStringAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +138,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB0A9D6512D69BD5004FE3A9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E0CFD5144E190000762C99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E0CFF5144E192200762C99 /* SuicideKit.framework in Frameworks */,
+				C7E0CFDA144E190000762C99 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +160,7 @@
 				BB0A9D5912D69BD5004FE3A9 /* Classes */,
 				BB0A9D5A12D69BD5004FE3A9 /* Other Sources */,
 				BB0A9D5B12D69BD5004FE3A9 /* Resources */,
+				C7E0CFDF144E190000762C99 /* SKDemo */,
 				BB0A9D5C12D69BD5004FE3A9 /* Frameworks */,
 				BB0A9D6312D69BD5004FE3A9 /* Products */,
 			);
@@ -118,6 +169,8 @@
 		BB0A9D5912D69BD5004FE3A9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C7E0D005144EF1C600762C99 /* NSString+FMStringAdditions.h */,
+				C7E0D006144EF1C600762C99 /* NSString+FMStringAdditions.m */,
 				BBEB4E9A144DE05900E10F95 /* SKInternalConstants.h */,
 				C74DEDAB138062F6005DA422 /* SKAsynchronousFetcher.h */,
 				C74DEDAC138062F6005DA422 /* SKAsynchronousFetcher.m */,
@@ -153,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				BB0A9D6412D69BD5004FE3A9 /* Cocoa.framework */,
+				C7E0CFDB144E190000762C99 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				BB0A9D6212D69BD5004FE3A9 /* SuicideKit.framework */,
+				C7E0CFD8144E190000762C99 /* SKDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -320,6 +375,41 @@
 			path = css;
 			sourceTree = "<group>";
 		};
+		C7E0CFDB144E190000762C99 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7E0CFDC144E190000762C99 /* AppKit.framework */,
+				C7E0CFDD144E190000762C99 /* CoreData.framework */,
+				C7E0CFDE144E190000762C99 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C7E0CFDF144E190000762C99 /* SKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C7E0CFEB144E190000762C99 /* AppDelegate.h */,
+				C7E0CFEC144E190000762C99 /* AppDelegate.m */,
+				C7E0CFF8144E19CF00762C99 /* AppController.h */,
+				C7E0CFF9144E19CF00762C99 /* AppController.m */,
+				C7E0CFEE144E190000762C99 /* MainMenu.xib */,
+				C7E0CFE0144E190000762C99 /* Supporting Files */,
+			);
+			path = SKDemo;
+			sourceTree = "<group>";
+		};
+		C7E0CFE0144E190000762C99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7E0CFE1144E190000762C99 /* SKDemo-Info.plist */,
+				C7E0CFE2144E190000762C99 /* InfoPlist.strings */,
+				C7E0CFE5144E190000762C99 /* main.m */,
+				C7E0CFE7144E190000762C99 /* SKDemo-Prefix.pch */,
+				C7E0CFE8144E190000762C99 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -332,6 +422,8 @@
 				C74DED9B13805DA4005DA422 /* SKPhotoset.h in Headers */,
 				C74DEDAD138062F6005DA422 /* SKAsynchronousFetcher.h in Headers */,
 				BBEB4E9B144DE05900E10F95 /* SKInternalConstants.h in Headers */,
+				C7E0CFFA144E19CF00762C99 /* AppController.h in Headers */,
+				C7E0D007144EF1C600762C99 /* NSString+FMStringAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +449,24 @@
 			productReference = BB0A9D6212D69BD5004FE3A9 /* SuicideKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		C7E0CFD7144E190000762C99 /* SKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7E0CFF3144E190000762C99 /* Build configuration list for PBXNativeTarget "SKDemo" */;
+			buildPhases = (
+				C7E0CFD4144E190000762C99 /* Sources */,
+				C7E0CFD5144E190000762C99 /* Frameworks */,
+				C7E0CFD6144E190000762C99 /* Resources */,
+				C7E0CFF6144E192A00762C99 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SKDemo;
+			productName = SKDemo;
+			productReference = C7E0CFD8144E190000762C99 /* SKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -379,6 +489,7 @@
 			projectRoot = "";
 			targets = (
 				BB0A9D6112D69BD5004FE3A9 /* SuicideKit */,
+				C7E0CFD7144E190000762C99 /* SKDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -389,6 +500,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB0A9D6A12D69BD5004FE3A9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E0CFD6144E190000762C99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E0CFE4144E190000762C99 /* InfoPlist.strings in Resources */,
+				C7E0CFEA144E190000762C99 /* Credits.rtf in Resources */,
+				C7E0CFF0144E190000762C99 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +542,17 @@
 				C74DED9C13805DA4005DA422 /* SKPhotoset.m in Sources */,
 				C74DEDAE138062F6005DA422 /* SKAsynchronousFetcher.m in Sources */,
 				BB61E717141CF37100839347 /* Makefile in Sources */,
+				C7E0CFFB144E19CF00762C99 /* AppController.m in Sources */,
+				C7E0D008144EF1C600762C99 /* NSString+FMStringAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E0CFD4144E190000762C99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E0CFE6144E190000762C99 /* main.m in Sources */,
+				C7E0CFED144E190000762C99 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +565,30 @@
 				BB0A9D6912D69BD5004FE3A9 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C7E0CFE2144E190000762C99 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E0CFE3144E190000762C99 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C7E0CFE8144E190000762C99 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E0CFE9144E190000762C99 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C7E0CFEE144E190000762C99 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E0CFEF144E190000762C99 /* en */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -510,6 +666,45 @@
 			};
 			name = Release;
 		};
+		C7E0CFF1144E190000762C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SKDemo/SKDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "SKDemo/SKDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C7E0CFF2144E190000762C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SKDemo/SKDemo-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "SKDemo/SKDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -530,6 +725,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C7E0CFF3144E190000762C99 /* Build configuration list for PBXNativeTarget "SKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7E0CFF1144E190000762C99 /* Debug */,
+				C7E0CFF2144E190000762C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
