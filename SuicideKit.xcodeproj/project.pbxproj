@@ -31,6 +31,7 @@
 		C7E0CFFB144E19CF00762C99 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E0CFF9144E19CF00762C99 /* AppController.m */; };
 		C7E0D007144EF1C600762C99 /* NSString+FMStringAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E0D005144EF1C600762C99 /* NSString+FMStringAdditions.h */; };
 		C7E0D008144EF1C600762C99 /* NSString+FMStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E0D006144EF1C600762C99 /* NSString+FMStringAdditions.m */; };
+		C7E0D00C14501A8200762C99 /* sg_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C7E0D00B14501A8200762C99 /* sg_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -130,6 +131,7 @@
 		C7E0CFF9144E19CF00762C99 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		C7E0D005144EF1C600762C99 /* NSString+FMStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FMStringAdditions.h"; sourceTree = "<group>"; };
 		C7E0D006144EF1C600762C99 /* NSString+FMStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FMStringAdditions.m"; sourceTree = "<group>"; };
+		C7E0D00B14501A8200762C99 /* sg_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sg_logo.png; path = SKDemo/Images/sg_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 		BB0A9D5B12D69BD5004FE3A9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C7E0D00E14501BA800762C99 /* Images */,
 				C7C138B3141A6C3E00940EB0 /* SRUCTURES.mdown */,
 				BB0A9D6612D69BD5004FE3A9 /* SuicideKit-Info.plist */,
 				BB0A9D6812D69BD5004FE3A9 /* InfoPlist.strings */,
@@ -388,6 +391,7 @@
 		C7E0CFDF144E190000762C99 /* SKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C7E0D00914501A2E00762C99 /* Resources */,
 				C7E0CFEB144E190000762C99 /* AppDelegate.h */,
 				C7E0CFEC144E190000762C99 /* AppDelegate.m */,
 				C7E0CFF8144E19CF00762C99 /* AppController.h */,
@@ -408,6 +412,29 @@
 				C7E0CFE8144E190000762C99 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7E0D00914501A2E00762C99 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C7E0D00A14501A5C00762C99 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C7E0D00A14501A5C00762C99 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		C7E0D00E14501BA800762C99 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C7E0D00B14501A8200762C99 /* sg_logo.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,6 +527,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB0A9D6A12D69BD5004FE3A9 /* InfoPlist.strings in Resources */,
+				C7E0D00C14501A8200762C99 /* sg_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
