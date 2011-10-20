@@ -26,12 +26,17 @@
 - (void)awakeFromNib
 	{
 	[photosetDropdown removeAllItems];
+	[girlPortraitView setImage:[NSImage imageNamed:@"sg_logo"]];
 	}
 
 - (IBAction)fetchPhotosets:(id)sender
 	{
 	self.theGirl = [SKGirl girlWithName:[girlNameField stringValue] andPhotosets:nil withAdditionalData:NO];
+	NSObjectController* girlController = [[NSObjectController alloc] init];
+	[girlController bind:@"content" toObject:self withKeyPath:@"theGirl" options:nil];
+	[girlPortraitView bind:@"value" toObject:girlController withKeyPath:@"selection.portrait" options:nil];
 	[fetchButton setEnabled:NO];
+	[theGirl fetchAdditionalData];
 	[theGirl fetchPhotosets];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(photosetsDidFinishLoading:) name:SKGirlPhotosetsDidFinishLoadingNotification object:theGirl];
 	[theGirl addObserver:self forKeyPath:@"photosets" options:NSKeyValueObservingOptionNew context:NULL];
