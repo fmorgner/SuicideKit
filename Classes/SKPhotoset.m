@@ -8,6 +8,7 @@
 
 #import "SKPhotoset.h"
 #import "SKAsynchronousFetcher.h"
+#import "NSString+FMStringAdditions.h"
 
 @implementation SKPhotoset
 
@@ -28,6 +29,13 @@
 		else
 			{
 			NSString* htmlString = [[[NSString alloc] initWithData:htmlData encoding:NSASCIIStringEncoding] autorelease];
+			
+			if(!([htmlString rangeOfString:@"<div id=\"content\" class=\"loggedout\">"].location == NSNotFound))
+				{
+				self = nil;
+				return self;
+				}
+			
 			NSString* photosetName = nil;
 			NSMutableArray* URLArray = [NSMutableArray array];
 	
@@ -59,7 +67,7 @@
 			[scanner setScanLocation:([scanner scanLocation] + 8)];
 			[scanner scanUpToString:@"/" intoString:&photosetName];
 			
-			self.title = [photosetName stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+			self.title = [[photosetName stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding] stringByTrimmingLeadingWhitespaces];
 			
 			scanner = nil;
 			
