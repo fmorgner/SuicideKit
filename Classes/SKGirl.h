@@ -27,7 +27,9 @@
  */
 
 static NSString* SKPhotosetIndexURLString = @"http://suicidegirls.com/girls/%@/pics/all/";
-
+static NSString* SKGirlPhotosetsKey = @"photosets";
+static NSString* SKGirlPhotosetsDidFinishLoadingNotification = @"SKGirlPhotosetsDidFinishLoadingNotification";
+static NSString* SKGirlPortraitURLString = @"http://img.suicidegirls.com/media/girls/%@/girl_pic_small.jpg";
 
 @interface SKGirl : NSObject
 
@@ -88,6 +90,7 @@ static NSString* SKPhotosetIndexURLString = @"http://suicidegirls.com/girls/%@/p
 
 @property(copy) NSString* name; /*!< The name of the girl*/
 @property(copy) NSArray*  photosets; /*!< The photosets of the girl*/
+@property(copy)	NSImage*  portrait;
 
 /*! @} */
 

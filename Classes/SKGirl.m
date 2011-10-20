@@ -19,14 +19,15 @@
 
 @implementation SKGirl
 
-@synthesize name, photosets;
+@synthesize name, photosets, portrait;
 
 - (id)init
 	{
 	if((self = [super init]))
 		{
-		self.name = nil;
-		self.photosets = nil;
+		self.name = @"";
+		self.photosets = [NSArray array];
+		self.portrait = [NSImage imageNamed:@"sg_logo.png"];
 		}
 	return self;
 	}
@@ -35,8 +36,9 @@
 	{
 	if((self = [super init]))
 		{
-		[self setName:aName];
-		[self setPhotosets:thePhotosets];
+		self.name = (aName) ? aName : @"";
+		self.photosets = (thePhotosets) ? thePhotosets : [NSArray array];
+		self.portrait = [NSImage imageNamed:@"sg_logo.png"];
 		}
 	return self;
 	}
@@ -48,7 +50,15 @@
 
 - (void)fetchAdditionalData
 	{
-	
+	SKAsynchronousFetcher* fetcher = [SKAsynchronousFetcher fetcher];
+	NSURL* portraitURL = [NSURL URLWithString:[NSString stringWithFormat:SKGirlPortraitURLString, name]];
+	[fetcher fetchDataAtURL:portraitURL withCompletionHandler:^(id fetchResult) {
+	if([fetchResult isKindOfClass:[NSData class]])
+		{
+		self.portrait = [[[NSImage alloc] initWithData:fetchResult] autorelease];
+		[self.portrait setName:self.name];
+		}
+	}];
 	}
 
 - (void)fetchPhotosets
@@ -101,20 +111,26 @@
 					}
 				}
 			}
-		
+
 		if([photosetDictionary count])
 			{
-			NSMutableArray* photosetArray = [NSMutableArray array];
-			
-			for(NSString* key in [photosetDictionary allKeys])
-				{
-				SKPhotoset* photoset = [SKPhotoset photosetWithContentsOfURL:[photosetDictionary objectForKey:key] immediatelyLoadPhotos:NO delegate:nil];
-				[photoset setGirl:self];
-				[photosetArray addObject:photoset];
-				}
-			
-			self.photosets = (NSArray*)photosetArray;
+			dispatch_async(dispatch_get_global_queue(0, 0), ^{
+				for(NSString* key in [photosetDictionary allKeys])
+					{
+					SKPhotoset* photoset = [SKPhotoset photosetWithContentsOfURL:[photosetDictionary objectForKey:key] immediatelyLoadPhotos:NO delegate:nil];
+					[photoset setGirl:self];
+					if(photoset)
+						[[self mutableArrayValueForKey:@"photosets"] addObject:photoset];
+					}
+				static dispatch_once_t onceToken;
+				
+				dispatch_once(&onceToken, ^{
+					NSDictionary* userInfo = [NSDictionary dictionaryWithObjectsAndKeys:self.photosets, SKGirlPhotosetsKey, nil];
+    			[[NSNotificationCenter defaultCenter] postNotificationName:SKGirlPhotosetsDidFinishLoadingNotification object:self userInfo:userInfo];
+				});	
+			});
 			}
+		
 		}
 	
 	[htmlDocument release];
